@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        app:constraintSetEnd="@+id/end"
+        app:constraintSetStart="@id/start"
+        app:duration="1000">
+        <OnSwipe
+            app:dragDirection="dragRight"
+            app:onTouchUp="autoComplete"
+            app:touchAnchorId="@id/storyOne" />
+
+        <KeyFrameSet>
+            <KeyAttribute
+                android:translationX="25dp"
+                android:scaleX="0.75"
+                android:scaleY="0.75"
+                app:framePosition="50"
+                app:motionTarget="@+id/storyOne" />
+
+            <KeyAttribute
+                android:translationX="-25dp"
+                android:scaleX="0.75"
+                android:scaleY="0.75"
+                app:framePosition="50"
+                app:motionTarget="@+id/storyTwo" />
+        </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint android:id="@+id/storyOne">
+            <Layout
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <CustomAttribute
+                app:attributeName="radius"
+                app:customDimension="24dp" />
+        </Constraint>
+
+        <Constraint android:id="@+id/storyTwo">
+            <Layout
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/storyOne"
+                app:layout_constraintTop_toTopOf="parent" />
+            <Transform android:rotationY="90" />
+            <CustomAttribute
+                app:attributeName="radius"
+                app:customDimension="24dp" />
+        </Constraint>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint android:id="@+id/storyOne">
+            <Layout
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <Transform android:rotationY="-90" />
+            <CustomAttribute
+                app:attributeName="radius"
+                app:customDimension="24dp" />
+        </Constraint>
+
+        <Constraint android:id="@+id/storyTwo">
+            <Layout
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <Transform android:rotationY="0" />
+            <CustomAttribute
+                app:attributeName="radius"
+                app:customDimension="24dp" />
+        </Constraint>
+    </ConstraintSet>
+</MotionScene>
