@@ -4,8 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.rodrigodominguez.mixanimationsmotionlayout.circularcards.CircularCardsHomeActivity
-import com.rodrigodominguez.mixanimationsmotionlayout.rotationcard.RotationCardActivity
-import com.rodrigodominguez.mixanimationsmotionlayout.storiesinstagram.InstagramStoryDemoActivity
+import com.rodrigodominguez.mixanimationsmotionlayout.rotationcard.RotationCardDemoActivity
 import com.rodrigodominguez.mixanimationsmotionlayout.storiesinstagram.InstagramStoryHomeActivity
 import com.rodrigodominguez.mixanimationsmotionlayout.verticalstackcards.VerticalStackCardsHomeActivity
 import kotlinx.android.synthetic.main.activity_main.*
@@ -27,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         }
         rotationCardScenes.setOnClickListener {
             startActivity(
-                Intent(this, RotationCardActivity::class.java)
+                Intent(this, RotationCardDemoActivity::class.java)
             )
         }
 

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:motionDebug="SHOW_ALL"
+    app:layoutDescription="@xml/activity_instagram_story_scene4_scene"
+    tools:context=".storiesinstagram.scenes.InstagramStoryScene4Activity">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/storyOne"
+        android:layout_width="256dp"
+        android:layout_height="512dp"
+        android:outlineSpotShadowColor="@android:color/transparent"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/storyTwo"
+        android:layout_width="256dp"
+        android:layout_height="512dp"
+        android:outlineSpotShadowColor="@android:color/transparent"
+        app:cardBackgroundColor="@color/design_default_color_secondary"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/storyOne"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

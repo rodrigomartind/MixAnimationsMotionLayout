@@ -11,7 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".storiesinstagram.InstagramStoryHomeActivity"></activity>
+        <activity android:name=".storiesinstagram.scenes.InstagramStoryScene4Activity"></activity>
+        <activity android:name=".storiesinstagram.scenes.InstagramStoryScene3Activity" />
+        <activity android:name=".storiesinstagram.scenes.InstagramStoryScene2Activity" />
+        <activity android:name=".storiesinstagram.scenes.InstagramStoryScene1Activity" />
+        <activity android:name=".storiesinstagram.InstagramStoryHomeActivity" />
         <activity android:name=".verticalstackcards.scenes.VerticalStackCardsScene3Activity" />
         <activity android:name=".verticalstackcards.scenes.VerticalStackCardsScene2Activity" />
         <activity android:name=".verticalstackcards.scenes.VerticalStackCardsScene1Activity" />
@@ -25,7 +29,7 @@
         <activity android:name=".circularcards.CircularCardsHomeActivity" />
         <activity android:name=".rotationcard.RotationCardHomeActivity" />
         <activity android:name=".storiesinstagram.InstagramStoryDemoActivity" />
-        <activity android:name=".rotationcard.RotationCardActivity" />
+        <activity android:name=".rotationcard.RotationCardDemoActivity" />
         <activity android:name=".verticalstackcards.VerticalStackCardsDemoActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
