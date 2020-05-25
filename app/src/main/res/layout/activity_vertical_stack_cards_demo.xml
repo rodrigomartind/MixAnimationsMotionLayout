@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/verticalMotionLayout"
-    app:layoutDescription="@xml/activity_vertical_pill_cards_scene"
-    tools:context=".verticalpilcards.VerticalStackCardsActivity">
+    app:layoutDescription="@xml/activity_vertical_stack_cards_demo_scene"
+    tools:context=".verticalpilcards.VerticalStackCardsDemoActivity">
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardTransparent"

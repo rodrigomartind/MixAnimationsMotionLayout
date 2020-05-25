@@ -4,11 +4,10 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.rodrigodominguez.mixanimationsmotionlayout.circularcards.CircularCardsHomeActivity
-import com.rodrigodominguez.mixanimationsmotionlayout.circularcards.CircularCardsScene1Activity
 import com.rodrigodominguez.mixanimationsmotionlayout.rotationcard.RotationCardActivity
-import com.rodrigodominguez.mixanimationsmotionlayout.rotationcard.RotationCardHomeActivity
 import com.rodrigodominguez.mixanimationsmotionlayout.storiesinstagram.InstagramStoryActivity
-import com.rodrigodominguez.mixanimationsmotionlayout.verticalpilcards.VerticalStackCardsActivity
+import com.rodrigodominguez.mixanimationsmotionlayout.verticalpilcards.VerticalStackCardsDemoActivity
+import com.rodrigodominguez.mixanimationsmotionlayout.verticalpilcards.VerticalStackCardsHomeActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -23,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         }
         circularCards.setOnClickListener {
             startActivity(
-                Intent(this, CircularCardsScene1Activity::class.java)
+                Intent(this, CircularCardsHomeActivity::class.java)
             )
         }
         rotationCardScenes.setOnClickListener {
@@ -34,7 +33,7 @@ class MainActivity : AppCompatActivity() {
 
         verticalCards.setOnClickListener {
             startActivity(
-                Intent(this, VerticalStackCardsActivity::class.java)
+                Intent(this, VerticalStackCardsHomeActivity::class.java)
             )
         }
     }

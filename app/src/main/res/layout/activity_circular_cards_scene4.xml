@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:motionDebug="SHOW_PATH"
+    app:layoutDescription="@xml/activity_circular_cards_scene4_scene"
+    tools:context=".circularcards.scenes.CircularCardsScene4Activity">
+
+    <View
+        android:id="@+id/guide"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardCenter"
+        android:layout_width="170dp"
+        android:layout_height="108dp"
+        android:rotation="90"
+        app:cardBackgroundColor="@color/colorPrimaryDark"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintCircle="@+id/guide"
+        app:layout_constraintCircleAngle="0"
+        app:layout_constraintCircleRadius="190dp" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardRight1"
+        android:layout_width="170dp"
+        android:layout_height="108dp"
+        android:rotation="110"
+        app:cardBackgroundColor="@color/design_default_color_secondary"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintCircle="@+id/guide"
+        app:layout_constraintCircleAngle="20"
+        app:layout_constraintCircleRadius="190dp" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardLeft1"
+        android:layout_width="170dp"
+        android:layout_height="108dp"
+        android:rotation="70"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="@android:color/holo_red_dark"
+        app:layout_constraintCircle="@+id/guide"
+        app:layout_constraintCircleAngle="340"
+        app:layout_constraintCircleRadius="190dp" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

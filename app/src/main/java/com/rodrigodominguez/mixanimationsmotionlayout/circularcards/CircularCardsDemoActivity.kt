@@ -7,12 +7,12 @@ import androidx.constraintlayout.motion.widget.TransitionAdapter
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.rodrigodominguez.mixanimationsmotionlayout.R
-import kotlinx.android.synthetic.main.activity_circular_cards_scene1.*
+import kotlinx.android.synthetic.main.activity_circular_cards_demo.*
 
-class CircularCardsScene1Activity : AppCompatActivity() {
+class CircularCardsDemoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_circular_cards_scene1)
+        setContentView(R.layout.activity_circular_cards_demo)
         val viewModel = ViewModelProviders
             .of(this)
             .get(CreditCardsViewModel::class.java)

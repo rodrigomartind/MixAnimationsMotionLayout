@@ -7,12 +7,12 @@ import androidx.constraintlayout.motion.widget.TransitionAdapter
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.rodrigodominguez.mixanimationsmotionlayout.R
-import kotlinx.android.synthetic.main.activity_vertical_pill_cards.*
+import kotlinx.android.synthetic.main.activity_vertical_stack_cards_demo.*
 
-class VerticalStackCardsActivity : AppCompatActivity() {
+class VerticalStackCardsDemoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_vertical_pill_cards)
+        setContentView(R.layout.activity_vertical_stack_cards_demo)
 
         val viewModel = ViewModelProviders
             .of(this)

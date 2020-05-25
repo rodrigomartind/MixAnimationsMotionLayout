@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        app:constraintSetEnd="@+id/detail"
+        app:constraintSetStart="@id/start"
+        app:duration="1000">
+
+        <OnSwipe app:onTouchUp="autoComplete"
+            app:dragDirection="dragUp"
+            app:touchAnchorId="@id/cardTop"
+            app:touchRegionId="@id/cardTop"/>
+
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+
+        <Constraint android:id="@+id/cardTop">
+            <Layout
+                android:layout_width="256dp"
+                android:layout_height="162dp"
+                android:layout_marginBottom="98dp"
+                app:cardBackgroundColor="@color/colorPrimary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+            <Transform android:rotationX="50" />
+        </Constraint>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/detail">
+        <Constraint android:id="@+id/cardTop">
+            <Layout
+                android:layout_width="299dp"
+                android:layout_height="189dp"
+                android:layout_marginTop="96dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <Transform android:rotationX="0" />
+        </Constraint>
+    </ConstraintSet>
+</MotionScene>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:motionDebug="SHOW_PATH"
+    app:layoutDescription="@xml/activity_vertical_stack_cards_scene3_scene"
+    tools:context=".verticalpilcards.scenes.VerticalStackCardsScene2Activity">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardTransparent"
+        android:layout_width="256dp"
+        android:layout_height="162dp"
+        app:cardCornerRadius="16dp"
+        app:cardBackgroundColor="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="56dp" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardDetail"
+        android:layout_width="256dp"
+        android:layout_height="162dp"
+        android:elevation="0dp"
+        app:cardCornerRadius="16dp"
+        app:cardBackgroundColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="96dp" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardTop"
+        android:layout_width="256dp"
+        android:layout_height="162dp"
+        app:cardBackgroundColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="98dp" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

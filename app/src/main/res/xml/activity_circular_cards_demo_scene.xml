@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        app:constraintSetEnd="@+id/secondCard"
+        app:constraintSetStart="@id/start"
+        app:duration="1000">
+        <OnSwipe
+            app:dragDirection="dragLeft"
+            app:onTouchUp="autoComplete"
+            app:touchRegionId="@id/cardCenter" />
+        <KeyFrameSet>
+            <KeyPosition
+                app:framePosition="50"
+                app:keyPositionType="pathRelative"
+                app:motionTarget="@+id/cardCenter"
+                app:percentX="1.75" />
+        </KeyFrameSet>
+    </Transition>
+
+    <Transition
+        app:constraintSetEnd="@+id/firstCard"
+        app:constraintSetStart="@id/start"
+        app:duration="1000">
+        <OnSwipe
+            app:dragDirection="dragRight"
+            app:onTouchUp="autoComplete"
+            app:touchRegionId="@id/cardCenter" />
+        <KeyFrameSet>
+            <KeyPosition
+                app:framePosition="50"
+                app:keyPositionType="pathRelative"
+                app:motionTarget="@+id/cardCenter"
+                app:percentX="1.75" />
+        </KeyFrameSet>
+    </Transition>
+
+    <Transition
+        app:constraintSetEnd="@+id/detailCard"
+        app:constraintSetStart="@id/start"
+        app:duration="1000">
+        <OnSwipe
+            app:dragDirection="dragUp"
+            app:onTouchUp="autoComplete"
+            app:touchRegionId="@id/cardCenter" />
+    </Transition>
+
+    <!-- ================= -->
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/guide"
+            android:layout_marginBottom="0dp">
+            <Layout
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:layout_marginBottom="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cardCenter">
+            <Layout
+                android:layout_width="318dp"
+                android:layout_height="202dp"
+                app:layout_constraintCircle="@+id/guide"
+                app:layout_constraintCircleAngle="0"
+                app:layout_constraintCircleRadius="300dp" />
+            <Transform
+                android:elevation="5dp"
+                android:rotation="90" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cardRight1">
+            <Layout
+                android:layout_width="212dp"
+                android:layout_height="135dp"
+                app:layout_constraintCircle="@+id/guide"
+                app:layout_constraintCircleAngle="20"
+                app:layout_constraintCircleRadius="300dp" />
+            <Transform
+                android:elevation="4dp"
+                android:rotation="110" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cardRight2">
+            <Layout
+                android:layout_width="212dp"
+                android:layout_height="135dp"
+                app:layout_constraintCircle="@+id/guide"
+                app:layout_constraintCircleAngle="40"
+                app:layout_constraintCircleRadius="300dp" />
+            <Transform
+                android:elevation="3dp"
+                android:rotation="130" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cardRight3">
+            <Layout
+                android:layout_width="212dp"
+                android:layout_height="135dp"
+                app:layout_constraintCircle="@+id/guide"
+                app:layout_constraintCircleAngle="60"
+                app:layout_constraintCircleRadius="300dp" />
+            <Transform
+                android:elevation="2dp"
+                android:rotation="150" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cardRight4">
+            <Layout
+                android:layout_width="212dp"
+                android:layout_height="135dp"
+                app:layout_constraintCircle="@+id/guide"
+                app:layout_constraintCircleAngle="80"
+                app:layout_constraintCircleRadius="300dp" />
+            <Transform
+                android:elevation="1dp"
+                android:rotation="170" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cardLeft1">
+            <Layout
+                android:layout_width="212dp"
+                android:layout_height="135dp"
+                app:layout_constraintCircle="@+id/guide"
+                app:layout_constraintCircleAngle="340"
+                app:layout_constraintCircleRadius="300dp" />
+            <Transform
+                android:elevation="4dp"
+                android:rotation="70" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cardLeft2">
+            <Layout
+                android:layout_width="212dp"
+                android:layout_height="135dp"
+                app:layout_constraintCircle="@+id/guide"
+                app:layout_constraintCircleAngle="320"
+                app:layout_constraintCircleRadius="300dp" />
+            <Transform
+                android:elevation="3dp"
+                android:rotation="50" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cardLeft3">
+            <Layout
+                android:layout_width="212dp"
+                android:layout_height="135dp"
+                app:layout_constraintCircle="@+id/guide"
+                app:layout_constraintCircleAngle="300"
+                app:layout_constraintCircleRadius="300dp" />
+            <Transform
+                android:elevation="2dp"
+                android:rotation="30" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cardLeft4">
+            <Layout
+                android:layout_width="212dp"
+                android:layout_height="135dp"
+                app:layout_constraintCircle="@+id/guide"
+                app:layout_constraintCircleAngle="280"
+                app:layout_constraintCircleRadius="300dp" />
+            <Transform
+                android:elevation="1dp"
+                android:rotation="10" />
+        </Constraint>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/secondCard">
+
+        <Constraint android:id="@+id/guide">
+            <Layout
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:layout_marginBottom="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cardCenter">
+            <Layout
+                android:layout_width="212dp"
+                android:layout_height="135dp"
+                app:layout_constraintCircle="@+id/guide"
+                app:layout_constraintCircleAngle="340"
+                app:layout_constraintCircleRadius="300dp" />
+            <Transform
+                android:elevation="4dp"
+                android:rotation="70" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cardRight1">
+            <Layout
+                android:layout_width="318dp"
+                android:layout_height="202dp"
+                app:layout_constraintCircle="@+id/guide"
+                app:layout_constraintCircleAngle="0"
+                app:layout_constraintCircleRadius="300dp" />
+            <Transform
+                android:elevation="5dp"
+                android:rotation="90" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cardRight2">
+            <Layout
+                android:layout_width="212dp"
+                android:layout_height="135dp"
+                app:layout_constraintCircle="@+id/guide"
+                app:layout_constraintCircleAngle="20"
+                app:layout_constraintCircleRadius="300dp" />
+            <Transform
+                android:elevation="4dp"
+                android:rotation="110" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cardRight3">
+            <Layout
+                android:layout_width="212dp"
+                android:layout_height="135dp"
+                app:layout_constraintCircle="@+id/guide"
+                app:layout_constraintCircleAngle="40"
+                app:layout_constraintCircleRadius="300dp" />
+            <Transform
+                android:elevation="3dp"
+                android:rotation="130" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cardRight4">
+            <Layout
+                android:layout_width="212dp"
+                android:layout_height="135dp"
+                app:layout_constraintCircle="@+id/guide"
+                app:layout_constraintCircleAngle="60"
+                app:layout_constraintCircleRadius="300dp" />
+            <Transform
+                android:elevation="2dp"
+                android:rotation="150" />
+        </Constraint>
+
+
+        <Constraint android:id="@+id/cardLeft1">
+            <Layout
+                android:layout_width="212dp"
+                android:layout_height="135dp"
+                app:layout_constraintCircle="@+id/guide"
+                app:layout_constraintCircleAngle="320"
+                app:layout_constraintCircleRadius="300dp" />
+            <Transform
+                android:elevation="3dp"
+                android:rotation="50" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cardLeft2">
+            <Layout
+                android:layout_width="212dp"
+                android:layout_height="135dp"
+                app:layout_constraintCircle="@+id/guide"
+                app:layout_constraintCircleAngle="300"
+                app:layout_constraintCircleRadius="300dp" />
+            <Transform
+                android:elevation="2dp"
+                android:rotation="30" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cardLeft3">
+            <Layout
+                android:layout_width="212dp"
+                android:layout_height="135dp"
+                app:layout_constraintCircle="@+id/guide"
+                app:layout_constraintCircleAngle="280"
+                app:layout_constraintCircleRadius="300dp" />
+            <Transform
+                android:elevation="1dp"
+                android:rotation="10" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cardLeft4">
+            <Layout
+                android:layout_width="212dp"
+                android:layout_height="135dp"
+                app:layout_constraintCircle="@+id/guide"
+                app:layout_constraintCircleAngle="260"
+                app:layout_constraintCircleRadius="300dp" />
+            <Transform
+                android:elevation="0dp"
+                android:rotation="-10" />
+        </Constraint>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/firstCard">
+
+        <Constraint android:id="@+id/guide">
+            <Layout
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:layout_marginBottom="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cardCenter">
+            <Layout
+                android:layout_width="212dp"
+                android:layout_height="135dp"
+                app:layout_constraintCircle="@+id/guide"
+                app:layout_constraintCircleAngle="20"
+                app:layout_constraintCircleRadius="300dp" />
+            <Transform
+                android:elevation="4dp"
+                android:rotation="110" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cardRight1">
+            <Layout
+                android:layout_width="212dp"
+                android:layout_height="135dp"
+                app:layout_constraintCircle="@+id/guide"
+                app:layout_constraintCircleAngle="40"
+                app:layout_constraintCircleRadius="300dp" />
+            <Transform
+                android:elevation="3dp"
+                android:rotation="130" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cardRight2">
+            <Layout
+                android:layout_width="212dp"
+                android:layout_height="135dp"
+                app:layout_constraintCircle="@+id/guide"
+                app:layout_constraintCircleAngle="60"
+                app:layout_constraintCircleRadius="300dp" />
+            <Transform
+                android:elevation="2dp"
+                android:rotation="150" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cardRight3">
+            <Layout
+                android:layout_width="212dp"
+                android:layout_height="135dp"
+                app:layout_constraintCircle="@+id/guide"
+                app:layout_constraintCircleAngle="80"
+                app:layout_constraintCircleRadius="300dp" />
+            <Transform
+                android:elevation="1dp"
+                android:rotation="170" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cardRight4">
+            <Layout
+                android:layout_width="212dp"
+                android:layout_height="135dp"
+                app:layout_constraintCircle="@+id/guide"
+                app:layout_constraintCircleAngle="100"
+                app:layout_constraintCircleRadius="300dp" />
+            <Transform
+                android:elevation="0dp"
+                android:rotation="190" />
+        </Constraint>
+
+
+        <Constraint android:id="@+id/cardLeft1">
+            <Layout
+                android:layout_width="318dp"
+                android:layout_height="202dp"
+                app:layout_constraintCircle="@+id/guide"
+                app:layout_constraintCircleAngle="0"
+                app:layout_constraintCircleRadius="300dp" />
+            <Transform
+                android:elevation="5dp"
+                android:rotation="90" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cardLeft2">
+            <Layout
+                android:layout_width="212dp"
+                android:layout_height="135dp"
+                app:layout_constraintCircle="@+id/guide"
+                app:layout_constraintCircleAngle="340"
+                app:layout_constraintCircleRadius="300dp" />
+            <Transform
+                android:elevation="4dp"
+                android:rotation="70" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cardLeft3">
+            <Layout
+                android:layout_width="212dp"
+                android:layout_height="135dp"
+                app:layout_constraintCircle="@+id/guide"
+                app:layout_constraintCircleAngle="320"
+                app:layout_constraintCircleRadius="300dp" />
+            <Transform
+                android:elevation="3dp"
+                android:rotation="50" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cardLeft4">
+            <Layout
+                android:layout_width="212dp"
+                android:layout_height="135dp"
+                app:layout_constraintCircle="@+id/guide"
+                app:layout_constraintCircleAngle="300"
+                app:layout_constraintCircleRadius="300dp" />
+            <Transform
+                android:elevation="2dp"
+                android:rotation="30" />
+        </Constraint>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/detailCard">
+
+        <Constraint android:id="@+id/guide">
+            <Layout
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:layout_marginBottom="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cardCenter">
+            <Layout
+                android:layout_width="318dp"
+                android:layout_height="202dp"
+                android:layout_marginTop="96dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <Transform
+                android:elevation="4dp"
+                android:rotation="0" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cardRight1">
+            <Layout
+                android:layout_width="212dp"
+                android:layout_height="135dp"
+                app:layout_constraintCircle="@+id/guide"
+                app:layout_constraintCircleAngle="20"
+                app:layout_constraintCircleRadius="90dp" />
+            <Transform
+                android:elevation="3dp"
+                android:rotation="110" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cardRight2">
+            <Layout
+                android:layout_width="212dp"
+                android:layout_height="135dp"
+                app:layout_constraintCircle="@+id/guide"
+                app:layout_constraintCircleAngle="40"
+                app:layout_constraintCircleRadius="90dp" />
+            <Transform
+                android:elevation="2dp"
+                android:rotation="130" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cardRight3">
+            <Layout
+                android:layout_width="212dp"
+                android:layout_height="135dp"
+                app:layout_constraintCircle="@+id/guide"
+                app:layout_constraintCircleAngle="60"
+                app:layout_constraintCircleRadius="90dp" />
+            <Transform
+                android:elevation="1dp"
+                android:rotation="150" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cardRight4">
+            <Layout
+                android:layout_width="212dp"
+                android:layout_height="135dp"
+                app:layout_constraintCircle="@+id/guide"
+                app:layout_constraintCircleAngle="80"
+                app:layout_constraintCircleRadius="90dp" />
+            <Transform
+                android:elevation="0dp"
+                android:rotation="170" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cardLeft1">
+            <Layout
+                android:layout_width="212dp"
+                android:layout_height="135dp"
+                app:layout_constraintCircle="@+id/guide"
+                app:layout_constraintCircleAngle="340"
+                app:layout_constraintCircleRadius="90dp" />
+            <Transform
+                android:elevation="3dp"
+                android:rotation="70" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cardLeft2">
+            <Layout
+                android:layout_width="212dp"
+                android:layout_height="135dp"
+                app:layout_constraintCircle="@+id/guide"
+                app:layout_constraintCircleAngle="320"
+                app:layout_constraintCircleRadius="90dp" />
+            <Transform
+                android:elevation="2dp"
+                android:rotation="50" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cardLeft3">
+            <Layout
+                android:layout_width="212dp"
+                android:layout_height="135dp"
+                app:layout_constraintCircle="@+id/guide"
+                app:layout_constraintCircleAngle="300"
+                app:layout_constraintCircleRadius="90dp" />
+            <Transform
+                android:elevation="1dp"
+                android:rotation="30" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cardLeft4">
+            <Layout
+                android:layout_width="212dp"
+                android:layout_height="135dp"
+                app:layout_constraintCircle="@+id/guide"
+                app:layout_constraintCircleAngle="280"
+                app:layout_constraintCircleRadius="90dp" />
+            <Transform
+                android:elevation="0dp"
+                android:rotation="10" />
+        </Constraint>
+    </ConstraintSet>
+</MotionScene>

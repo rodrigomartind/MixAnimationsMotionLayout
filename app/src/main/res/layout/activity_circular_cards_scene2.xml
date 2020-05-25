@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_circular_cards_scene2_scene"
     app:motionDebug="SHOW_PATH"
-    app:layoutDescription="@xml/activity_circular_cards_scene1_scene"
-    tools:context=".circularcards.scenes.CircularCardsScene1Activity">
+    tools:context=".circularcards.scenes.CircularCardsScene2Activity">
 
     <View
         android:id="@+id/guide"
@@ -20,10 +20,22 @@
         android:id="@+id/cardCenter"
         android:layout_width="170dp"
         android:layout_height="108dp"
+        android:rotation="90"
         app:cardCornerRadius="8dp"
         app:cardBackgroundColor="@color/colorPrimaryDark"
         app:layout_constraintCircle="@+id/guide"
         app:layout_constraintCircleAngle="0"
+        app:layout_constraintCircleRadius="190dp" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardRight1"
+        android:layout_width="170dp"
+        android:layout_height="108dp"
+        android:rotation="110"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="@color/design_default_color_secondary"
+        app:layout_constraintCircle="@+id/guide"
+        app:layout_constraintCircleAngle="20"
         app:layout_constraintCircleRadius="190dp" />
 
 </androidx.constraintlayout.motion.widget.MotionLayout>
