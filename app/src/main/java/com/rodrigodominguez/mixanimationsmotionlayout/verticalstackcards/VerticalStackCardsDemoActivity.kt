@@ -1,4 +1,4 @@
-package com.rodrigodominguez.mixanimationsmotionlayout.verticalpilcards
+package com.rodrigodominguez.mixanimationsmotionlayout.verticalstackcards
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

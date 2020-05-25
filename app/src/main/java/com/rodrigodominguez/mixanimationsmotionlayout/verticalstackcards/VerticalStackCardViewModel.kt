@@ -1,4 +1,4 @@
-package com.rodrigodominguez.mixanimationsmotionlayout.verticalpilcards
+package com.rodrigodominguez.mixanimationsmotionlayout.verticalstackcards
 
 import android.graphics.Color
 import androidx.lifecycle.LiveData

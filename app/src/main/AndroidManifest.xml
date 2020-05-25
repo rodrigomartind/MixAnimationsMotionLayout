@@ -11,10 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".verticalpilcards.scenes.VerticalStackCardsScene3Activity"></activity>
-        <activity android:name=".verticalpilcards.scenes.VerticalStackCardsScene2Activity" />
-        <activity android:name=".verticalpilcards.scenes.VerticalStackCardsScene1Activity" />
-        <activity android:name=".verticalpilcards.VerticalStackCardsHomeActivity" />
+        <activity android:name=".storiesinstagram.InstagramStoryHomeActivity"></activity>
+        <activity android:name=".verticalstackcards.scenes.VerticalStackCardsScene3Activity" />
+        <activity android:name=".verticalstackcards.scenes.VerticalStackCardsScene2Activity" />
+        <activity android:name=".verticalstackcards.scenes.VerticalStackCardsScene1Activity" />
+        <activity android:name=".verticalstackcards.VerticalStackCardsHomeActivity" />
         <activity android:name=".circularcards.scenes.CircularCardsScene5Activity" />
         <activity android:name=".circularcards.scenes.CircularCardsScene4Activity" />
         <activity android:name=".circularcards.scenes.CircularCardsScene3Activity" />
@@ -23,9 +24,9 @@
         <activity android:name=".circularcards.CircularCardsDemoActivity" />
         <activity android:name=".circularcards.CircularCardsHomeActivity" />
         <activity android:name=".rotationcard.RotationCardHomeActivity" />
-        <activity android:name=".storiesinstagram.InstagramStoryActivity" />
+        <activity android:name=".storiesinstagram.InstagramStoryDemoActivity" />
         <activity android:name=".rotationcard.RotationCardActivity" />
-        <activity android:name=".verticalpilcards.VerticalStackCardsDemoActivity" />
+        <activity android:name=".verticalstackcards.VerticalStackCardsDemoActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

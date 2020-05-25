@@ -6,8 +6,8 @@
     android:layout_height="match_parent"
     android:background="#000000"
     android:id="@+id/storyMotionLayout"
-    app:layoutDescription="@xml/activity_instagram_story_scene"
-    tools:context=".storiesinstagram.InstagramStoryActivity">
+    app:layoutDescription="@xml/activity_instagram_story_demo_scene"
+    tools:context=".storiesinstagram.InstagramStoryDemoActivity">
 
 
     <com.google.android.material.card.MaterialCardView

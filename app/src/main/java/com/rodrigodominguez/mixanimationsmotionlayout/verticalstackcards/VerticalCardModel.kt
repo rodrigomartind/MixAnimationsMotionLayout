@@ -1,4 +1,4 @@
-package com.rodrigodominguez.mixanimationsmotionlayout.verticalpilcards
+package com.rodrigodominguez.mixanimationsmotionlayout.verticalstackcards
 
 data class VerticalCardModel(
     val detailCard: Card,

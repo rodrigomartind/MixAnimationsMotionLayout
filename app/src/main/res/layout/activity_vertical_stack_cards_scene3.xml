@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     app:motionDebug="SHOW_PATH"
     app:layoutDescription="@xml/activity_vertical_stack_cards_scene3_scene"
-    tools:context=".verticalpilcards.scenes.VerticalStackCardsScene2Activity">
+    tools:context=".verticalstackcards.scenes.VerticalStackCardsScene2Activity">
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardTransparent"

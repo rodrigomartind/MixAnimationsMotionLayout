@@ -6,15 +6,15 @@ import androidx.constraintlayout.motion.widget.MotionLayout
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.rodrigodominguez.mixanimationsmotionlayout.R
-import kotlinx.android.synthetic.main.activity_instagram_story.*
+import kotlinx.android.synthetic.main.activity_instagram_story_demo.*
 import kotlinx.android.synthetic.main.layout_story.*
 import kotlinx.android.synthetic.main.layout_story_two.*
 
-class InstagramStoryActivity : AppCompatActivity() {
+class InstagramStoryDemoActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_instagram_story)
+        setContentView(R.layout.activity_instagram_story_demo)
 
         val viewModel = ViewModelProviders
             .of(this)

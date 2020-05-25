@@ -5,53 +5,53 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    tools:context=".verticalstackcards.VerticalStackCardsHomeActivity">
+    tools:context=".storiesinstagram.InstagramStoryHomeActivity">
 
     <Button
-        android:id="@+id/demo"
+        android:id="@+id/demoInstagram"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
-        android:text="demo"
+        android:text="Demo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/verticalStackScene1"
+        android:id="@+id/instagramStoryScene1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
-        android:text="Vertical Stack Scene 1"
+        android:text="Instagram Story Scene 1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/demo" />
+        app:layout_constraintTop_toBottomOf="@+id/demoInstagram" />
 
     <Button
-        android:id="@+id/verticalStackScene2"
+        android:id="@+id/instagramStoryScene2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
-        android:text="Vertical Stack Scene 2"
+        android:text="Instagram Story Scene 2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/verticalStackScene1" />
+        app:layout_constraintTop_toBottomOf="@+id/instagramStoryScene1" />
 
     <Button
-        android:id="@+id/verticalStackScene3"
+        android:id="@+id/instagramStoryScene3"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
-        android:text="Vertical Stack Scene 3"
+        android:text="Instagram Story Scene 3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/verticalStackScene2" />
+        app:layout_constraintTop_toBottomOf="@+id/instagramStoryScene2" />
 </androidx.constraintlayout.widget.ConstraintLayout>

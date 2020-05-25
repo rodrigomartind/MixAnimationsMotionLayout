@@ -5,9 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.rodrigodominguez.mixanimationsmotionlayout.circularcards.CircularCardsHomeActivity
 import com.rodrigodominguez.mixanimationsmotionlayout.rotationcard.RotationCardActivity
-import com.rodrigodominguez.mixanimationsmotionlayout.storiesinstagram.InstagramStoryActivity
-import com.rodrigodominguez.mixanimationsmotionlayout.verticalpilcards.VerticalStackCardsDemoActivity
-import com.rodrigodominguez.mixanimationsmotionlayout.verticalpilcards.VerticalStackCardsHomeActivity
+import com.rodrigodominguez.mixanimationsmotionlayout.storiesinstagram.InstagramStoryDemoActivity
+import com.rodrigodominguez.mixanimationsmotionlayout.storiesinstagram.InstagramStoryHomeActivity
+import com.rodrigodominguez.mixanimationsmotionlayout.verticalstackcards.VerticalStackCardsHomeActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         storiesHome.setOnClickListener {
             startActivity(
-                Intent(this, InstagramStoryActivity::class.java)
+                Intent(this, InstagramStoryHomeActivity::class.java)
             )
         }
         circularCards.setOnClickListener {

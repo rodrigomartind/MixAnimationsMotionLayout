@@ -1,12 +1,12 @@
-package com.rodrigodominguez.mixanimationsmotionlayout.verticalpilcards
+package com.rodrigodominguez.mixanimationsmotionlayout.verticalstackcards
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.rodrigodominguez.mixanimationsmotionlayout.R
-import com.rodrigodominguez.mixanimationsmotionlayout.verticalpilcards.scenes.VerticalStackCardsScene1Activity
-import com.rodrigodominguez.mixanimationsmotionlayout.verticalpilcards.scenes.VerticalStackCardsScene2Activity
-import com.rodrigodominguez.mixanimationsmotionlayout.verticalpilcards.scenes.VerticalStackCardsScene3Activity
+import com.rodrigodominguez.mixanimationsmotionlayout.verticalstackcards.scenes.VerticalStackCardsScene1Activity
+import com.rodrigodominguez.mixanimationsmotionlayout.verticalstackcards.scenes.VerticalStackCardsScene2Activity
+import com.rodrigodominguez.mixanimationsmotionlayout.verticalstackcards.scenes.VerticalStackCardsScene3Activity
 import kotlinx.android.synthetic.main.activity_vertical_stack_cards_home.*
 
 class VerticalStackCardsHomeActivity : AppCompatActivity() {
