@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        app:constraintSetEnd="@+id/leftCard"
+        app:constraintSetStart="@id/start"
+        app:duration="1000">
+        <OnSwipe
+            app:dragDirection="dragLeft"
+            app:onTouchUp="autoComplete"
+            app:touchRegionId="@id/cardCenter" />
+        <KeyFrameSet>
+            <KeyPosition
+                app:framePosition="50"
+                app:keyPositionType="pathRelative"
+                app:motionTarget="@+id/cardCenter"
+                app:percentX="1.75" />
+        </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+
+        <Constraint android:id="@+id/cardCenter">
+            <Layout
+                android:layout_width="318dp"
+                android:layout_height="202dp"
+                app:layout_constraintCircle="@+id/guide"
+                app:layout_constraintCircleAngle="0"
+                app:layout_constraintCircleRadius="290dp" />
+            <Transform
+                android:elevation="5dp"
+                android:rotation="90" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cardRight1">
+            <Layout
+                android:layout_width="212dp"
+                android:layout_height="135dp"
+                app:layout_constraintCircle="@+id/guide"
+                app:layout_constraintCircleAngle="20"
+                app:layout_constraintCircleRadius="290dp" />
+            <Transform
+                android:elevation="4dp"
+                android:rotation="110" />
+        </Constraint>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/leftCard">
+        <Constraint android:id="@+id/cardCenter">
+            <Layout
+                android:layout_width="212dp"
+                android:layout_height="135dp"
+                app:layout_constraintCircle="@+id/guide"
+                app:layout_constraintCircleAngle="340"
+                app:layout_constraintCircleRadius="290dp" />
+            <Transform
+                android:elevation="4dp"
+                android:rotation="70" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cardRight1">
+            <Layout
+                android:layout_width="318dp"
+                android:layout_height="202dp"
+                app:layout_constraintCircle="@+id/guide"
+                app:layout_constraintCircleAngle="0"
+                app:layout_constraintCircleRadius="290dp" />
+            <Transform
+                android:elevation="5dp"
+                android:rotation="90" />
+        </Constraint>
+    </ConstraintSet>
+</MotionScene>

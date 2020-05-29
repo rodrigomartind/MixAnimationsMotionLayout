@@ -11,7 +11,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".storiesinstagram.scenes.InstagramStoryScene4Activity"></activity>
+        <activity android:name=".examplekeyposition.PositionKeyExampleActivity"></activity>
+        <activity android:name=".examplekeyposition.KeyPositionPathActivity" />
+        <activity android:name=".examplekeyposition.KeyPositionParentActivity" />
+        <activity android:name=".examplekeyposition.KeyPositionDeltaActivity" />
+        <activity android:name=".rotationcard.scenes.RotationCardScene2Activity" />
+        <activity android:name=".rotationcard.scenes.RotationCardScene1Activity" />
+        <activity android:name=".storiesinstagram.scenes.InstagramStoryScene4Activity" />
         <activity android:name=".storiesinstagram.scenes.InstagramStoryScene3Activity" />
         <activity android:name=".storiesinstagram.scenes.InstagramStoryScene2Activity" />
         <activity android:name=".storiesinstagram.scenes.InstagramStoryScene1Activity" />

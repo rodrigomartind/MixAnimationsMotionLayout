@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:motionDebug="SHOW_PATH"
-    app:layoutDescription="@xml/activity_circular_cards_scene4_scene"
+    app:layoutDescription="@xml/activity_circular_cards_scene4"
     tools:context=".circularcards.scenes.CircularCardsScene4Activity">
 
     <View

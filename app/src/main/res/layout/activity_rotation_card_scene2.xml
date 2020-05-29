@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layoutDescription="@xml/activity_rotation_card_scene_demo">
+
+    app:layoutDescription="@xml/activity_rotation_card_scene2_scene"
+    tools:context=".rotationcard.scenes.RotationCardScene2Activity">
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/itemCard"
@@ -98,6 +101,5 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>
-
 
 </androidx.constraintlayout.motion.widget.MotionLayout>

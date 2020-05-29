@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layoutDescription="@xml/activity_rotation_card_scene_demo">
-
+    app:layoutDescription="@xml/activity_rotation_card_scene1_scene"
+    tools:context=".rotationcard.scenes.RotationCardScene1Activity">
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/itemCard"
         android:layout_width="300dp"
@@ -77,27 +78,4 @@
                 app:layout_constraintStart_toStartOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>
-
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/itemCard2"
-        android:layout_width="300dp"
-        android:layout_height="189dp"
-        android:layout_marginBottom="156dp"
-        android:outlineSpotShadowColor="@android:color/transparent"
-        app:cardCornerRadius="24dp"
-        app:cardBackgroundColor="@color/colorPrimaryDark"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <include layout="@layout/credit_card_reverse" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </com.google.android.material.card.MaterialCardView>
-
-
 </androidx.constraintlayout.motion.widget.MotionLayout>

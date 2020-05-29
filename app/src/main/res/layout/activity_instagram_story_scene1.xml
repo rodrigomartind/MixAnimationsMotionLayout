@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:motionDebug="SHOW_PATH"
-    app:layoutDescription="@xml/activity_instagram_story_scene1_scene"
+    app:layoutDescription="@xml/activity_instagram_story_scene1"
     tools:context=".storiesinstagram.scenes.InstagramStoryScene1Activity">
 
     <com.google.android.material.card.MaterialCardView

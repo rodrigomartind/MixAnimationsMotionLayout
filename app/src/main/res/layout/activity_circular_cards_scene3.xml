@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layoutDescription="@xml/activity_circular_cards_scene3_scene"
+    app:layoutDescription="@xml/activity_circular_cards_scene3"
     app:motionDebug="SHOW_PATH"
     tools:context=".circularcards.scenes.CircularCardsScene3Activity">
 

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:motionDebug="SHOW_PATH"
-    app:layoutDescription="@xml/activity_circular_cards_scene1_scene"
+    app:layoutDescription="@xml/activity_circular_cards_scene1"
     tools:context=".circularcards.scenes.CircularCardsScene1Activity">
 
     <View
@@ -18,8 +18,8 @@
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardCenter"
-        android:layout_width="170dp"
-        android:layout_height="108dp"
+        android:layout_width="318dp"
+        android:layout_height="202dp"
         app:cardCornerRadius="8dp"
         app:cardBackgroundColor="@color/colorPrimaryDark"
         app:layout_constraintCircle="@+id/guide"

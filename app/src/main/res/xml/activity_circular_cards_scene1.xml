@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    >
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <Transition
+        android:id="@+id/startToLeftCard"
         app:constraintSetEnd="@+id/leftCard"
         app:constraintSetStart="@id/start"
         app:duration="1000">
-       <OnSwipe
-           app:touchRegionId="@id/cardCenter"
-           app:onTouchUp="autoComplete"
-           app:dragDirection="dragLeft"/>
+        <OnSwipe
+            app:dragDirection="dragLeft"
+            app:onTouchUp="autoComplete"
+            app:touchRegionId="@id/cardCenter" />
     </Transition>
 
     <ConstraintSet android:id="@+id/start">

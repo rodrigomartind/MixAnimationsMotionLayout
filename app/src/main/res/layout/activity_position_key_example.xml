@@ -5,53 +5,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    tools:context=".rotationcard.RotationCardHomeActivity">
+    tools:context=".examplekeyposition.PositionKeyExampleActivity">
 
     <Button
-        android:id="@+id/demoRotationCard"
+        android:id="@+id/keyPositionDelta"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
-        android:text="demo"
+        android:text="Key Position Delta"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/rotationCardScene1"
+        android:id="@+id/keyPositionParent"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
-        android:text="Rotation card scene 1"
+        android:text="Key Position Parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/demoRotationCard" />
+        app:layout_constraintTop_toBottomOf="@+id/keyPositionDelta" />
 
     <Button
-        android:id="@+id/rotationCardScene2"
+        android:id="@+id/keyPositionPath"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
-        android:text="Rotation Card Scene 2"
+        android:text="Key Position Path"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rotationCardScene1" />
-
-    <Button
-        android:id="@+id/rotationCardScene3"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:text="Rotation Card Scene 3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rotationCardScene2" />
+        app:layout_constraintTop_toBottomOf="@+id/keyPositionParent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
