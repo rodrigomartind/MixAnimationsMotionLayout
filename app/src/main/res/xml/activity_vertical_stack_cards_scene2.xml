@@ -19,26 +19,26 @@
 
         <Constraint android:id="@+id/cardTop">
             <Layout
-                android:layout_width="256dp"
-                android:layout_height="162dp"
+                android:layout_width="299dp"
+                android:layout_height="189dp"
                 android:layout_marginBottom="98dp"
                 app:cardBackgroundColor="@color/colorPrimary"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
-            <Transform android:rotationX="50" />
+            <Transform android:rotationX="50" android:scaleY="0.9" android:scaleX="0.9"/>
         </Constraint>
 
         <Constraint android:id="@+id/cardTransparent">
             <Layout
-                android:layout_width="256dp"
-                android:layout_height="162dp"
+                android:layout_width="299dp"
+                android:layout_height="189dp"
                 android:layout_marginBottom="56dp"
                 app:cardBackgroundColor="@color/colorPrimary"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
-            <Transform android:rotationX="50" />
+            <Transform android:rotationX="50" android:scaleY="0.9" android:scaleX="0.9"/>
             <PropertySet android:alpha="0.5" />
         </Constraint>
     </ConstraintSet>
@@ -52,19 +52,19 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
-            <Transform android:rotationX="0" />
+            <Transform android:rotationX="0" android:scaleX="1" android:scaleY="1"/>
         </Constraint>
 
         <Constraint android:id="@+id/cardTransparent">
             <Layout
-                android:layout_width="256dp"
-                android:layout_height="162dp"
+                android:layout_width="299dp"
+                android:layout_height="189dp"
                 android:layout_marginBottom="98dp"
                 app:cardBackgroundColor="@color/colorPrimary"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
-            <Transform android:rotationX="50" />
+            <Transform android:rotationX="50" android:scaleY="0.9" android:scaleX="0.9"/>
             <PropertySet android:alpha="1" />
         </Constraint>
     </ConstraintSet>

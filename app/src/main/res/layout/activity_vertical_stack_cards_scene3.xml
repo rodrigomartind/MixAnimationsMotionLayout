@@ -10,8 +10,8 @@
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardTransparent"
-        android:layout_width="256dp"
-        android:layout_height="162dp"
+        android:layout_width="299dp"
+        android:layout_height="189dp"
         app:cardCornerRadius="16dp"
         app:cardBackgroundColor="@color/colorPrimaryDark"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,8 +21,8 @@
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardDetail"
-        android:layout_width="256dp"
-        android:layout_height="162dp"
+        android:layout_width="299dp"
+        android:layout_height="189dp"
         android:elevation="0dp"
         app:cardCornerRadius="16dp"
         app:cardBackgroundColor="@android:color/black"
@@ -33,8 +33,8 @@
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardTop"
-        android:layout_width="256dp"
-        android:layout_height="162dp"
+        android:layout_width="299dp"
+        android:layout_height="189dp"
         app:cardBackgroundColor="@color/colorAccent"
         app:layout_constraintEnd_toEndOf="parent"
         app:cardCornerRadius="16dp"
