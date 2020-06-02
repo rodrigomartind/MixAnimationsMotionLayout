@@ -39,7 +39,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
             <Transform android:rotationX="50" android:scaleY="0.9" android:scaleX="0.9"/>
-            <PropertySet android:alpha="0.5" />
+            <PropertySet android:alpha="0.5"/>
         </Constraint>
     </ConstraintSet>
 
