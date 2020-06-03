@@ -7,41 +7,16 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/storiesHome"
+        android:id="@+id/circularCards"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
-        android:text="Stories Scenes"
+        android:text="Circular Cards Scenes"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/rotationCardScenes"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:text="Rotation Card Scenes"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/storiesHome" />
-
-    <Button
-    android:id="@+id/circularCards"
-    android:layout_width="0dp"
-    android:layout_height="wrap_content"
-    android:layout_marginStart="32dp"
-    android:layout_marginTop="16dp"
-    android:layout_marginEnd="32dp"
-    android:text="Circular Cards Scenes"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/rotationCardScenes" />
-
 
     <Button
         android:id="@+id/verticalCards"
@@ -56,6 +31,30 @@
         app:layout_constraintTop_toBottomOf="@+id/circularCards" />
 
     <Button
+        android:id="@+id/storiesHome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:text="Stories Scenes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/verticalCards" />
+
+    <Button
+        android:id="@+id/rotationCardScenes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:text="Rotation Card Scenes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/storiesHome" />
+
+    <Button
         android:id="@+id/positionKeyExamples"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -65,5 +64,5 @@
         android:text="Position Key Examples"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/verticalCards" />
+        app:layout_constraintTop_toBottomOf="@+id/rotationCardScenes" />
 </androidx.constraintlayout.widget.ConstraintLayout>
