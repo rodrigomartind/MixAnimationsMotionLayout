@@ -25,7 +25,7 @@ allprojects {
 
 ext {
     appCompat = "1.1.0"
-    constraintLayout = '2.0.0-beta6'
+    constraintLayout = '2.0.0-beta8'
     coreKtx = '1.4.0-alpha01'
     materialComponents = "1.2.0-alpha06"
 }
