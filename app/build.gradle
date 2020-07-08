@@ -34,5 +34,6 @@ dependencies {
     implementation "androidx.constraintlayout:constraintlayout:$constraintLayout"
     implementation "com.google.android.material:material:$materialComponents"
     implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
 
 }

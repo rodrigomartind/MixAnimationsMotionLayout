@@ -3,10 +3,11 @@ package com.rodrigodominguez.mixanimationsmotionlayout
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.rodrigodominguez.mixanimationsmotionlayout.carousel.CarouselTestActivity
 import com.rodrigodominguez.mixanimationsmotionlayout.circularcards.CircularCardsHomeActivity
 import com.rodrigodominguez.mixanimationsmotionlayout.examplekeyposition.PositionKeyExampleActivity
-import com.rodrigodominguez.mixanimationsmotionlayout.rotationcard.RotationCardDemoActivity
 import com.rodrigodominguez.mixanimationsmotionlayout.rotationcard.RotationCardHomeActivity
+import com.rodrigodominguez.mixanimationsmotionlayout.sensor.TestSensoresAndroidActivity
 import com.rodrigodominguez.mixanimationsmotionlayout.storiesinstagram.InstagramStoryHomeActivity
 import com.rodrigodominguez.mixanimationsmotionlayout.verticalstackcards.VerticalStackCardsHomeActivity
 import kotlinx.android.synthetic.main.activity_main.*
@@ -40,6 +41,17 @@ class MainActivity : AppCompatActivity() {
         positionKeyExamples.setOnClickListener {
             startActivity(
                 Intent(this, PositionKeyExampleActivity::class.java)
+            )
+        }
+        testCarousel.setOnClickListener {
+            startActivity(
+                Intent(this, CarouselTestActivity::class.java)
+            )
+        }
+
+        starbucks.setOnClickListener {
+            startActivity(
+                    Intent(this, TestSensoresAndroidActivity::class.java)
             )
         }
     }
