@@ -3,7 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <Transition
-        android:id="@+id/startToEndCircular"
         app:constraintSetEnd="@id/end"
         app:constraintSetStart="@+id/start"
         app:duration="600"

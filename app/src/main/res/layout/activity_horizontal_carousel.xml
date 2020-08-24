@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/motionHorizontalParent"
+    app:layoutDescription="@xml/activity_horizontal_carousel_scene"
+    tools:context=".horizontalcarousel.HorizontalCarouselActivity">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/itemOne"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        app:cardCornerRadius="8dp"
+        android:layout_marginStart="16dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="16:12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/itemTwo"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="@color/colorPrimaryDark"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/itemOne"
+        app:layout_constraintDimensionRatio="16:12"
+        app:layout_constraintStart_toEndOf="@id/itemOne" />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/itemThree"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="@color/design_default_color_secondary"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@id/itemTwo"
+        app:layout_constraintDimensionRatio="16:12"
+        app:layout_constraintStart_toStartOf="@id/itemTwo" />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/itemFour"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        app:cardCornerRadius="34dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/itemThree"
+        app:layout_constraintDimensionRatio="16:12"
+        app:layout_constraintStart_toEndOf="@id/itemThree" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/itemFive"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        app:cardCornerRadius="34dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/itemFour"
+        app:layout_constraintDimensionRatio="16:12"
+        app:layout_constraintStart_toEndOf="@id/itemFour" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

@@ -16,8 +16,9 @@
     <ConstraintSet android:id="@+id/start">
         <Constraint android:id="@+id/cardDetail">
             <Layout
+                app:layout_constraintDimensionRatio="85:53"
                 android:layout_width="299dp"
-                android:layout_height="189dp"
+                android:layout_height="0dp"
                 android:layout_marginTop="96dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

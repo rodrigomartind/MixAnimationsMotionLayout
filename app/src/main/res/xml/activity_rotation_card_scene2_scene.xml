@@ -3,7 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <Transition
-        android:id="@+id/startToEndCircular"
         app:constraintSetEnd="@id/end"
         app:constraintSetStart="@+id/start"
         app:duration="600"
@@ -32,7 +31,6 @@
         </Constraint>
 
         <Constraint
-            android:id="@+id/itemCard2"
             android:layout_width="300dp"
             android:layout_height="189dp"
             android:layout_marginBottom="0dp"
@@ -66,7 +64,6 @@
         </Constraint>
 
         <Constraint
-            android:id="@+id/itemCard2"
             android:layout_width="300dp"
             android:layout_height="189dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -105,7 +102,6 @@
         </Constraint>
 
         <Constraint
-            android:id="@+id/itemCard2"
             android:layout_width="300dp"
             android:layout_height="189dp"
             app:layout_constraintBottom_toBottomOf="parent"

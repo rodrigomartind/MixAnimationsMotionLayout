@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rotationCardMotionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:motionDebug="SHOW_PROGRESS"
+    app:layoutDescription="@xml/activity_test_sensores_android_scene"
+    tools:context=".sensor.CardSensorActivity">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardRotation"
+        android:layout_width="180dp"
+        android:layout_height="120dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/card_mp" />
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.motion.widget.MotionLayout>

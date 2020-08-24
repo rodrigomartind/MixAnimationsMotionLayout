@@ -2,6 +2,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.rodrigodominguez.mixanimationsmotionlayout">
 
+    <uses-feature
+        android:name="android.hardware.accelerometer"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.sensor.proximity"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.sensor.gyroscope"
+        android:required="true" />
+
     <application
         android:allowBackup="true"
         android:hardwareAccelerated="false"
@@ -11,7 +21,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".examplekeyposition.PositionKeyExampleActivity"></activity>
+        <activity android:name=".horizontalcarousel.HorizontalCarouselActivity"></activity>
+        <activity android:name=".onboardingpyg.OnboardingPYGActivity" />
+        <activity android:name=".sensor.CardSensorActivity" />
+        <activity android:name=".starbucks.StarbucksDetailActivity" />
+        <activity android:name=".carousel.CarouselTestActivity" />
+        <activity android:name=".examplekeyposition.PositionKeyExampleActivity" />
         <activity android:name=".examplekeyposition.KeyPositionPathActivity" />
         <activity android:name=".examplekeyposition.KeyPositionParentActivity" />
         <activity android:name=".examplekeyposition.KeyPositionDeltaActivity" />

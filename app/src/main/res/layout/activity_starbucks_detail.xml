@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/starbucksMotion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greenStarbucks"
+    app:layoutDescription="@xml/activity_starbucks_detail_scene"
+    tools:context=".starbucks.StarbucksDetailActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+
+    <View
+        android:id="@+id/sheetBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/shape_sheet_starbucks"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/shapeCup"
+        android:layout_width="56dp"
+        android:layout_height="4dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/shape_size_cup"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="@id/sheetBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/addButton"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:backgroundTint="@color/greenStarbucks"
+        android:text="Add to Bag"
+        android:textColor="@android:color/white"
+        app:cornerRadius="24dp"
+        app:layout_constraintBottom_toBottomOf="@id/sheetBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#27251F" />
+
+    <include layout="@layout/list_products_motion_layout" />
+
+
+    <include
+        android:id="@+id/detailInformation"
+        layout="@layout/detail_container_starbucks"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/addButton"
+        app:layout_constraintEnd_toEndOf="@id/sheetBackground"
+        app:layout_constraintStart_toStartOf="@+id/sheetBackground" />
+
+    <TextView
+        android:id="@+id/myBag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/rubik_bold"
+        android:text="My Bag"
+        android:textColor="@android:color/white"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sheetBackground" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listItems"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/myBag" />
+
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="180dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listItems" />
+
+    <TextView
+        android:id="@+id/totalTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/rubik_medium"
+        android:text="Total"
+        android:textColor="@android:color/white"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@id/payButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/payButton"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@android:color/white"
+        android:text="Confirm Order"
+        android:textColor="@color/greenStarbucks"
+        app:cornerRadius="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/listItems"
+        app:rippleColor="@color/greenStarbucks" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

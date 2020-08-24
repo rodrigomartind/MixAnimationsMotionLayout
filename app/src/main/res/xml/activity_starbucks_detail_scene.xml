@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        app:constraintSetEnd="@+id/end"
+        app:constraintSetStart="@id/start"
+        app:duration="600">
+        <OnClick
+            app:clickAction="toggle"
+            app:targetId="@id/addButton" />
+    </Transition>
+
+    <Transition
+        app:constraintSetEnd="@+id/detailBag"
+        app:constraintSetStart="@id/end"
+        app:duration="500">
+        <OnSwipe
+            app:dragDirection="dragUp"
+            app:onTouchUp="autoComplete"
+            app:touchAnchorId="@id/detailInformation" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint android:id="@+id/myBag">
+            <PropertySet android:alpha="0" />
+        </Constraint>
+        <Constraint android:id="@+id/listItems">
+            <PropertySet android:alpha="0" />
+        </Constraint>
+        <Constraint>
+            <PropertySet android:alpha="0" />
+            <Transform android:elevation="1dp" />
+        </Constraint>
+        <Constraint android:id="@+id/detailInformation">
+            <Layout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@id/addButton"
+                app:layout_constraintEnd_toEndOf="@id/sheetBackground"
+                app:layout_constraintStart_toStartOf="@+id/sheetBackground" />
+            <Transform android:elevation="1dp" />
+        </Constraint>
+
+        <Constraint android:id="@id/sheetBackground">
+            <Layout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/shape_sheet_starbucks"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <Transform android:elevation="1dp" />
+        </Constraint>
+
+        <Constraint android:id="@+id/addButton">
+            <Layout
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="36dp"
+                app:layout_constraintBottom_toBottomOf="@id/sheetBackground"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+            <Transform android:elevation="1dp" />
+        </Constraint>
+
+        <Constraint android:id="@+id/motionProducts">
+            <Layout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </Constraint>
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint android:id="@+id/myBag">
+            <PropertySet android:alpha="0" />
+        </Constraint>
+        <Constraint android:id="@+id/listItems">
+            <PropertySet android:alpha="0" />
+        </Constraint>
+        <Constraint>
+            <PropertySet android:alpha="1" />
+            <Transform android:elevation="1dp" />
+        </Constraint>
+
+        <Constraint android:id="@+id/detailInformation">
+            <Layout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@id/addButton"
+                app:layout_constraintEnd_toEndOf="@id/sheetBackground"
+                app:layout_constraintStart_toStartOf="@+id/sheetBackground" />
+            <Transform android:elevation="1dp" />
+        </Constraint>
+
+
+        <Constraint android:id="@id/sheetBackground">
+            <Layout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="66dp"
+                android:background="@drawable/shape_sheet_starbucks"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <Transform android:elevation="1dp" />
+        </Constraint>
+
+        <Constraint android:id="@+id/addButton">
+            <Layout
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="36dp"
+                app:layout_constraintBottom_toBottomOf="@id/sheetBackground"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+            <Transform android:elevation="1dp" />
+        </Constraint>
+
+        <Constraint android:id="@+id/motionProducts">
+            <Layout
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </Constraint>
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/detailBag">
+        <Constraint android:id="@+id/listItems">
+            <PropertySet android:alpha="1" />
+            <Layout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/divider"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/myBag" />
+        </Constraint>
+        <Constraint android:id="@+id/payButton">
+            <PropertySet android:alpha="1" />
+            <Layout
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </Constraint>
+
+        <Constraint android:id="@+id/divider">
+            <Layout
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/totalTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </Constraint>
+
+
+        <Constraint android:id="@+id/myBag">
+            <PropertySet android:alpha="1" />
+        </Constraint>
+        <Constraint>
+            <PropertySet android:alpha="1" />
+            <Transform android:elevation="1dp" />
+        </Constraint>
+
+        <Constraint android:id="@+id/detailInformation">
+            <Layout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@id/addButton"
+                app:layout_constraintEnd_toEndOf="@id/sheetBackground"
+                app:layout_constraintStart_toStartOf="@+id/sheetBackground" />
+            <Transform android:elevation="1dp" />
+        </Constraint>
+
+
+        <Constraint android:id="@id/sheetBackground">
+            <Layout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/shape_sheet_starbucks"
+                app:layout_constraintBottom_toBottomOf="@+id/guideline"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <Transform android:elevation="1dp" />
+        </Constraint>
+
+        <Constraint android:id="@+id/addButton">
+            <Layout
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="36dp"
+                app:layout_constraintBottom_toBottomOf="@id/sheetBackground"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+            <Transform android:elevation="1dp" />
+        </Constraint>
+
+        <Constraint android:id="@+id/motionProducts">
+            <Layout
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+            <PropertySet android:alpha="0" />
+        </Constraint>
+
+    </ConstraintSet>
+</MotionScene>

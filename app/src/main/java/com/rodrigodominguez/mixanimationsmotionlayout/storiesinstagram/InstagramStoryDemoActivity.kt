@@ -39,12 +39,14 @@ class InstagramStoryDemoActivity : AppCompatActivity() {
             }
 
             override fun onTransitionCompleted(p0: MotionLayout?, currentId: Int) {
-                when (currentId) {
-                    R.id.end -> {
-                        storyMotionDetail.progress = 0f
-                        storyMotionLayout.progress = 0f
-                        storyMotionLayout.setTransition(R.id.start, R.id.end)
-                        viewModel.swipe()
+                p0?.post {
+                    when (currentId) {
+                        R.id.end -> {
+                            storyMotionDetail.progress = 0f
+                            storyMotionLayout.progress = 0f
+                            storyMotionLayout.setTransition(R.id.start, R.id.end)
+                            viewModel.swipe()
+                        }
                     }
                 }
             }
