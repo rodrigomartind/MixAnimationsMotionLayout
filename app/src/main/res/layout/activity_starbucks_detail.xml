@@ -28,7 +28,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <View
-        android:id="@+id/swipe"
+        android:id="@+id/shapeCup"
         android:layout_width="56dp"
         android:layout_height="4dp"
         android:layout_marginBottom="16dp"
@@ -103,22 +103,10 @@
         android:layout_marginStart="16dp"
         android:fontFamily="@font/rubik_medium"
         android:text="Total"
-        android:textSize="34sp"
         android:textColor="@android:color/white"
+        android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@id/payButton"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/totalAmmount"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:fontFamily="@font/rubik_medium"
-        android:text="$ 8,75"
-        android:textSize="34sp"
-        android:textColor="@android:color/white"
-        app:layout_constraintBottom_toTopOf="@id/payButton"
-        app:layout_constraintEnd_toEndOf="parent" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/payButton"

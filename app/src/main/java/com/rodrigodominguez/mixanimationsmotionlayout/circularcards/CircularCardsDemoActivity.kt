@@ -25,16 +25,18 @@ class CircularCardsDemoActivity : AppCompatActivity() {
 
         motionLayout.setTransitionListener(object : TransitionAdapter() {
             override fun onTransitionCompleted(motionLayout: MotionLayout, currentId: Int) {
-                when (currentId) {
-                    R.id.secondCard -> {
-                        motionLayout.progress = 0f
-                        motionLayout.setTransition(R.id.start, R.id.secondCard)
-                        viewModel.swipeRight()
-                    }
-                    R.id.firstCard -> {
-                        motionLayout.progress = 0f
-                        motionLayout.setTransition(R.id.start, R.id.secondCard)
-                        viewModel.swipeLeft()
+                motionLayout.post {
+                    when (currentId) {
+                        R.id.secondCard -> {
+                            motionLayout.progress = 0f
+                            motionLayout.setTransition(R.id.start, R.id.secondCard)
+                            viewModel.swipeRight()
+                        }
+                        R.id.firstCard -> {
+                            motionLayout.progress = 0f
+                            motionLayout.setTransition(R.id.start, R.id.secondCard)
+                            viewModel.swipeLeft()
+                        }
                     }
                 }
             }

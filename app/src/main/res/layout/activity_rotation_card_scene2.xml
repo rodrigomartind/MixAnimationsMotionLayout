@@ -44,7 +44,6 @@
                 app:layout_constraintTop_toBottomOf="@id/numberCardOne" />
 
             <ImageView
-                android:id="@+id/contact"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
                 android:layout_marginEnd="16dp"
@@ -82,7 +81,6 @@
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
-        android:id="@+id/itemCard2"
         android:layout_width="300dp"
         android:layout_height="189dp"
         android:layout_marginBottom="156dp"

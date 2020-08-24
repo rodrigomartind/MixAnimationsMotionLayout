@@ -14,16 +14,9 @@ import kotlinx.android.synthetic.main.activity_test_sensores_android.*
 import kotlin.math.roundToInt
 
 
-class TestSensoresAndroidActivity : AppCompatActivity(), SensorEventListener {
+class CardSensorActivity : AppCompatActivity(), SensorEventListener {
     private var sensorManager: SensorManager? = null
     private var gravitySensor: Sensor? = null
-
-    private var lastUpdate: Long = 0
-    private var last_x = 0f
-    private var last_y = 0f
-    private var last_z = 0f
-    private val SHAKE_THRESHOLD = 600
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -56,22 +49,6 @@ class TestSensoresAndroidActivity : AppCompatActivity(), SensorEventListener {
     override fun onSensorChanged(event: SensorEvent?) {
         event?.let { sensorEvent ->
             val ejeZ = (sensorEvent.values[2] * 10) / 100
-            val ejeX = (sensorEvent.values[0] * 10) / 100
-
-//            if (ejeX > 0 && ejeX < 100) {
-//                if (ejeZ < 0.05) {
-//                    rotationCardMotionLayout.progress = 0f
-//                    rotationCardMotionLayout.setTransition(R.id.start, R.id.ejeX)
-//                    if (ejeX > rotationCardMotionLayout.progress + 0.04) {
-//                        rotationCardMotionLayout.progress = ejeX
-//                    }
-//
-//                    if (ejeX < rotationCardMotionLayout.progress - 0.04) {
-//                        rotationCardMotionLayout.progress = ejeX
-//                    }
-//                }
-//            }
-
             if (ejeZ > 0 && ejeZ < 100) {
                 if (ejeZ > rotationCardMotionLayout.progress + 0.04) {
                     rotationCardMotionLayout.progress = ejeZ

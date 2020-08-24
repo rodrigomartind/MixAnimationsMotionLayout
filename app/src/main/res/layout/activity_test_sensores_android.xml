@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     app:motionDebug="SHOW_PROGRESS"
     app:layoutDescription="@xml/activity_test_sensores_android_scene"
-    tools:context=".sensor.TestSensoresAndroidActivity">
+    tools:context=".sensor.CardSensorActivity">
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardRotation"

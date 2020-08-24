@@ -46,15 +46,15 @@ class StarbucksDetailActivity : AppCompatActivity() {
             override fun onTransitionStarted(p0: MotionLayout?, p1: Int, p2: Int) {
             }
 
-            override fun onTransitionChange(p0: MotionLayout?, p1: Int, end: Int, p3: Float) {
-                when (end) {
-                    R.id.end -> motionProducts.progress = p3
+            override fun onTransitionChange(p0: MotionLayout?, start: Int, end: Int, p3: Float) {
+                if (end == R.id.end) {
+                    motionProducts.setTransition(R.id.start, R.id.intermediate)
+                    motionProducts.transitionToState(R.id.intermediate)
                 }
             }
 
             override fun onTransitionCompleted(p0: MotionLayout?, currentId: Int) {
             }
-
         })
 
         listItems.layoutManager = LinearLayoutManager(this)

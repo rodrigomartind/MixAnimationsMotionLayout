@@ -26,12 +26,14 @@ class VerticalStackCardsDemoActivity : AppCompatActivity() {
 
         verticalMotionLayout.setTransitionListener(object : TransitionAdapter() {
             override fun onTransitionCompleted(motionLayout: MotionLayout?, currentId: Int) {
-                when (currentId) {
-                    R.id.end -> {
-                        verticalMotionLayout.progress = 0f
-                        verticalMotionLayout.progress = 0f
-                        verticalMotionLayout.setTransition(R.id.start, R.id.end)
-                        viewModel.swipe()
+                motionLayout?.post {
+                    when (currentId) {
+                        R.id.end -> {
+                            verticalMotionLayout.progress = 0f
+                            verticalMotionLayout.progress = 0f
+                            verticalMotionLayout.setTransition(R.id.start, R.id.end)
+                            viewModel.swipe()
+                        }
                     }
                 }
             }

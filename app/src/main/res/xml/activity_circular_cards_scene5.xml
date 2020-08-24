@@ -20,7 +20,6 @@
     </Transition>
 
     <Transition
-        android:id="@+id/detailTransition"
         app:constraintSetEnd="@+id/detailCard"
         app:constraintSetStart="@id/start"
         app:duration="1000">

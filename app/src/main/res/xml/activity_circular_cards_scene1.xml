@@ -3,7 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <Transition
-        android:id="@+id/startToLeftCard"
         app:constraintSetEnd="@+id/leftCard"
         app:constraintSetStart="@id/start"
         app:duration="1000">

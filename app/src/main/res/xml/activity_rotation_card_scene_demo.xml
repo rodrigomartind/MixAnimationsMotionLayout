@@ -3,11 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <Transition
-        android:id="@+id/startToEndCircular"
         app:constraintSetEnd="@id/end"
         app:constraintSetStart="@+id/start"
-        app:duration="600"
-        app:motionInterpolator="easeIn">
+        app:duration="300">
         <OnClick
             app:clickAction="toggle"
             app:targetId="@id/itemCard"/>
@@ -17,7 +15,7 @@
         app:autoTransition="animateToEnd"
         app:constraintSetEnd="@+id/reverseCard"
         app:constraintSetStart="@+id/end"
-        app:duration="600" />
+        app:duration="300" />
 
     <!-- =================================== -->
     <ConstraintSet android:id="@+id/start">

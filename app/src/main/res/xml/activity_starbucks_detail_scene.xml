@@ -28,7 +28,7 @@
         <Constraint android:id="@+id/listItems">
             <PropertySet android:alpha="0" />
         </Constraint>
-        <Constraint android:id="@+id/swipe">
+        <Constraint>
             <PropertySet android:alpha="0" />
             <Transform android:elevation="1dp" />
         </Constraint>
@@ -85,7 +85,7 @@
         <Constraint android:id="@+id/listItems">
             <PropertySet android:alpha="0" />
         </Constraint>
-        <Constraint android:id="@+id/swipe">
+        <Constraint>
             <PropertySet android:alpha="1" />
             <Transform android:elevation="1dp" />
         </Constraint>
@@ -180,7 +180,7 @@
         <Constraint android:id="@+id/myBag">
             <PropertySet android:alpha="1" />
         </Constraint>
-        <Constraint android:id="@+id/swipe">
+        <Constraint>
             <PropertySet android:alpha="1" />
             <Transform android:elevation="1dp" />
         </Constraint>
