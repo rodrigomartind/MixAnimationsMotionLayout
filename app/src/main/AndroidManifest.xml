@@ -21,7 +21,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".horizontalcarousel.HorizontalCarouselActivity"></activity>
+        <activity android:name=".testbutton.TestButtonActivity"></activity>
+        <activity
+            android:name=".pillcards.PillCardsActivity"
+            android:label="@string/title_activity_pill_cards"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".flow.FlowDemoActivity" />
+        <activity android:name=".horizontalcarousel.HorizontalCarouselActivity" />
         <activity android:name=".onboardingpyg.OnboardingPYGActivity" />
         <activity android:name=".sensor.CardSensorActivity" />
         <activity android:name=".starbucks.StarbucksDetailActivity" />

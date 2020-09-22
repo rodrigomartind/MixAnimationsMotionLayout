@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_flow_demo_scene"
+    tools:context=".flow.FlowDemoActivity">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardFlow1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:cardBackgroundColor="@color/colorPrimary" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardFlow2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:cardBackgroundColor="@android:color/holo_orange_light" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardFlow3"
+        android:layout_width="100dp"
+
+        android:layout_height="100dp"
+        app:cardBackgroundColor="@android:color/holo_red_light" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardFlow4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:cardBackgroundColor="@android:color/holo_green_light" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardFlow5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:cardBackgroundColor="@color/greenStarbucks" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardFlow6"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:cardBackgroundColor="@android:color/holo_blue_light" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="horizontal"
+        app:constraint_referenced_ids="cardFlow1, cardFlow2, cardFlow3, cardFlow4,cardFlow5, cardFlow6"
+        app:flow_maxElementsWrap="2"
+        app:flow_wrapMode="aligned"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

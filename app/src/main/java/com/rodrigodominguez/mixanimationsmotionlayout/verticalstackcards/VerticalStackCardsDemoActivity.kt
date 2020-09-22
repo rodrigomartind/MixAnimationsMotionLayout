@@ -31,7 +31,6 @@ class VerticalStackCardsDemoActivity : AppCompatActivity() {
                         R.id.end -> {
                             verticalMotionLayout.progress = 0f
                             verticalMotionLayout.progress = 0f
-                            verticalMotionLayout.setTransition(R.id.start, R.id.end)
                             viewModel.swipe()
                         }
                     }

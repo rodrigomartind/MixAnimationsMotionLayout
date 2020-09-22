@@ -5,11 +5,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.rodrigodominguez.mixanimationsmotionlayout.circularcards.CircularCardsHomeActivity
 import com.rodrigodominguez.mixanimationsmotionlayout.examplekeyposition.PositionKeyExampleActivity
+import com.rodrigodominguez.mixanimationsmotionlayout.flow.FlowDemoActivity
 import com.rodrigodominguez.mixanimationsmotionlayout.horizontalcarousel.HorizontalCarouselActivity
+import com.rodrigodominguez.mixanimationsmotionlayout.pillcards.PillCardsActivity
 import com.rodrigodominguez.mixanimationsmotionlayout.rotationcard.RotationCardHomeActivity
 import com.rodrigodominguez.mixanimationsmotionlayout.sensor.CardSensorActivity
 import com.rodrigodominguez.mixanimationsmotionlayout.starbucks.StarbucksDetailActivity
 import com.rodrigodominguez.mixanimationsmotionlayout.storiesinstagram.InstagramStoryHomeActivity
+import com.rodrigodominguez.mixanimationsmotionlayout.testbutton.TestButtonActivity
 import com.rodrigodominguez.mixanimationsmotionlayout.verticalstackcards.VerticalStackCardsHomeActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -60,6 +63,12 @@ class MainActivity : AppCompatActivity() {
         snakeCarousel.setOnClickListener {
             startActivity(
                 Intent(this, HorizontalCarouselActivity::class.java)
+            )
+        }
+
+        pillCardsButton.setOnClickListener{
+            startActivity(
+                    Intent(this, TestButtonActivity::class.java)
             )
         }
     }
