@@ -21,17 +21,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".testbutton.TestButtonActivity"></activity>
+        <activity android:name=".democonstraintset.MotionDemoActivity"></activity>
+        <activity android:name=".democonstraintset.CustomAttributeDemoActivity" />
+        <activity android:name=".democonstraintset.LayoutDemoActivity" />
+        <activity android:name=".democonstraintset.PropertySetDemoActivity" />
+        <activity android:name=".democonstraintset.TransformDemoActivity" />
+        <activity android:name=".democonstraintset.DemoConstraintSetActivity" />
+        <activity android:name=".telegramheaderdemo.TelegramHeaderDemoActivity" />
+        <activity android:name=".testbutton.TestButtonActivity" />
         <activity
             android:name=".pillcards.PillCardsActivity"
             android:label="@string/title_activity_pill_cards"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".flow.FlowDemoActivity" />
         <activity android:name=".horizontalcarousel.HorizontalCarouselActivity" />
-        <activity android:name=".onboardingpyg.OnboardingPYGActivity" />
         <activity android:name=".sensor.CardSensorActivity" />
         <activity android:name=".starbucks.StarbucksDetailActivity" />
-        <activity android:name=".carousel.CarouselTestActivity" />
         <activity android:name=".examplekeyposition.PositionKeyExampleActivity" />
         <activity android:name=".examplekeyposition.KeyPositionPathActivity" />
         <activity android:name=".examplekeyposition.KeyPositionParentActivity" />

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/collapseProfile"
+        motion:constraintSetStart="@id/init"
+        motion:duration="600">
+        <KeyFrameSet></KeyFrameSet>
+        <OnSwipe
+            motion:dragDirection="dragUp"
+            motion:touchAnchorId="@+id/cardProfile"
+            motion:touchAnchorSide="bottom" />
+    </Transition>
+
+    <Transition
+        motion:constraintSetEnd="@+id/init"
+        motion:constraintSetStart="@id/middleCollapse"
+        motion:duration="600"
+        motion:pathMotionArc="none">
+        <KeyFrameSet>
+            <KeyPosition
+                motion:framePosition="50"
+                motion:keyPositionType="deltaRelative"
+                motion:motionTarget="@+id/cardProfile"
+                motion:percentX="1.0"
+                motion:percentY="0" />
+        </KeyFrameSet>
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@+id/cardProfile"
+            motion:touchAnchorSide="bottom" />
+    </Transition>
+
+    <Transition
+        motion:autoTransition="animateToEnd"
+        motion:constraintSetEnd="@+id/middleCollapse"
+        motion:constraintSetStart="@+id/collapseProfile"
+        motion:duration="300">
+        <KeyFrameSet>
+            <KeyPosition
+                motion:framePosition="50"
+                motion:keyPositionType="pathRelative"
+                motion:motionTarget="@+id/cardProfile"
+                motion:percentX="0.0"
+                motion:percentY="0.0" />
+        </KeyFrameSet>
+    </Transition>
+
+    <Transition
+        motion:constraintSetEnd="@+id/finishCollapse"
+        motion:constraintSetStart="@id/middleCollapse"
+        motion:duration="600">
+        <OnSwipe
+            motion:touchAnchorId="@+id/cardProfile"
+            motion:touchAnchorSide="bottom" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/init">
+        <Constraint
+            android:id="@+id/headerBackground"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintBottom_toTopOf="@+id/guideHeader"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+        <Constraint
+            android:id="@+id/cardProfile"
+            android:layout_width="match_parent"
+            android:layout_height="340dp"
+            android:elevation="0dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent">
+            <CustomAttribute
+                motion:attributeName="radius"
+                motion:customDimension="0dp" />
+        </Constraint>
+
+        <Constraint android:id="@+id/nameField">
+            <Layout
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                motion:layout_constraintBottom_toTopOf="@id/statusField"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintStart_toStartOf="parent" />
+            <CustomAttribute
+                motion:attributeName="textSize"
+                motion:customFloatValue="28" />
+        </Constraint>
+
+        <Constraint android:id="@+id/statusField">
+            <Layout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                motion:layout_constraintBottom_toBottomOf="@+id/guideHeader"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintStart_toStartOf="@+id/nameField" />
+        </Constraint>
+    </ConstraintSet>
+
+
+    <ConstraintSet android:id="@+id/collapseProfile">
+        <Constraint
+            android:id="@+id/cardProfile"
+            android:layout_width="0dp"
+            android:layout_height="240dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent">
+            <CustomAttribute
+                motion:attributeName="radius"
+                motion:customDimension="0dp" />
+        </Constraint>
+
+        <Constraint android:id="@+id/nameField">
+            <Layout
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                motion:layout_constraintBottom_toTopOf="@id/statusField"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintStart_toStartOf="parent" />
+            <CustomAttribute
+                motion:attributeName="textSize"
+                motion:customFloatValue="28" />
+        </Constraint>
+
+        <Constraint android:id="@+id/statusField">
+            <Layout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                motion:layout_constraintBottom_toBottomOf="@+id/cardProfile"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintStart_toStartOf="@+id/nameField" />
+        </Constraint>
+
+    </ConstraintSet>
+
+
+    <ConstraintSet
+        android:id="@+id/middleCollapse"
+        motion:deriveConstraintsFrom="@id/collapseProfile">
+
+        <Constraint
+            android:id="@+id/headerBackground"
+            android:layout_width="0dp"
+            android:layout_height="188dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+
+        <Constraint
+            android:id="@+id/cardProfile"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginStart="16dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/headerBackground"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/backButton">
+
+            <CustomAttribute
+                motion:attributeName="radius"
+                motion:customDimension="50dp" />
+        </Constraint>
+
+        <Constraint android:id="@+id/nameField">
+            <Layout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintStart_toEndOf="@+id/cardProfile"
+                motion:layout_constraintTop_toTopOf="@+id/cardProfile" />
+            <CustomAttribute
+                motion:attributeName="textSize"
+                motion:customFloatValue="18" />
+        </Constraint>
+
+        <Constraint android:id="@+id/statusField">
+            <Layout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="24dp"
+                motion:layout_constraintBottom_toBottomOf="@id/cardProfile"
+                motion:layout_constraintStart_toEndOf="@+id/cardProfile" />
+        </Constraint>
+
+        <Constraint android:id="@+id/fabButton">
+            <Layout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                motion:layout_constraintBottom_toBottomOf="@id/headerBackground"
+                motion:layout_constraintTop_toBottomOf="@+id/headerBackground" />
+            <PropertySet android:visibility="visible" />
+        </Constraint>
+
+    </ConstraintSet>
+
+
+    <ConstraintSet android:id="@+id/finishCollapse">
+
+        <Constraint
+            android:id="@+id/headerBackground"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+
+        <Constraint
+            android:id="@+id/cardProfile"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="8dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent">
+            <CustomAttribute
+                motion:attributeName="radius"
+                motion:customDimension="28dp" />
+        </Constraint>
+
+        <Constraint android:id="@+id/nameField">
+            <Layout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                motion:layout_constraintBottom_toTopOf="@id/statusField"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintStart_toEndOf="@+id/cardProfile"
+                motion:layout_constraintTop_toTopOf="@+id/cardProfile"
+                motion:layout_constraintVertical_chainStyle="packed" />
+            <CustomAttribute
+                motion:attributeName="textSize"
+                motion:customFloatValue="16" />
+        </Constraint>
+
+        <Constraint android:id="@+id/statusField">
+            <Layout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                motion:layout_constraintBottom_toBottomOf="@id/cardProfile"
+                motion:layout_constraintStart_toEndOf="@+id/cardProfile"
+                motion:layout_constraintTop_toBottomOf="@+id/nameField" />
+        </Constraint>
+
+        <Constraint android:id="@+id/fabButton">
+            <Layout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                motion:layout_constraintBottom_toBottomOf="@id/headerBackground"
+                motion:layout_constraintTop_toBottomOf="@+id/headerBackground" />
+            <PropertySet android:visibility="invisible" />
+        </Constraint>
+    </ConstraintSet>
+
+</MotionScene>

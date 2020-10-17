@@ -14,17 +14,16 @@ class PillCardsViewModel : ViewModel() {
         get() = stream
 
     private val data = listOf(
-            CreditCardModel(backgroundColor = Color.parseColor("#ffcdd2")),
-            CreditCardModel(backgroundColor = Color.parseColor("#ad1457")),
-            CreditCardModel(backgroundColor = Color.parseColor("#e1bee7")),
-            CreditCardModel(backgroundColor = Color.parseColor("#4527a0")),
-            CreditCardModel(backgroundColor = Color.parseColor("#c5cae9")),
-            CreditCardModel(backgroundColor = Color.parseColor("#00838f")),
-            CreditCardModel(backgroundColor = Color.parseColor("#dcedc8")),
-            CreditCardModel(backgroundColor = Color.parseColor("#9e9d24")),
-            CreditCardModel(backgroundColor = Color.parseColor("#fff59d")),
-            CreditCardModel(backgroundColor = Color.parseColor("#388e3c")),
-            CreditCardModel(backgroundColor = Color.parseColor("#689f38"))
+            CreditCardModel(backgroundColor = Color.parseColor("#607d8b")),
+            CreditCardModel(backgroundColor = Color.parseColor("#d4e157")),
+            CreditCardModel(backgroundColor = Color.parseColor("#9e9e9e")),
+            CreditCardModel(backgroundColor = Color.parseColor("#e91e63")),
+            CreditCardModel(backgroundColor = Color.parseColor("#795548")),
+            CreditCardModel(backgroundColor = Color.parseColor("#039be5")),
+            CreditCardModel(backgroundColor = Color.parseColor("#fbc02d")),
+            CreditCardModel(backgroundColor = Color.parseColor("#303f9f")),
+            CreditCardModel(backgroundColor = Color.parseColor("#dce775")),
+            CreditCardModel(backgroundColor = Color.parseColor("#6a1b9a"))
     )
     private var currentIndex = 0
 
@@ -36,8 +35,6 @@ class PillCardsViewModel : ViewModel() {
         get() = data[(currentIndex + 2) % data.size]
     private val cardFourLeft
         get() = data[(currentIndex + 3) % data.size]
-    private val cardFive
-        get() = data[(currentIndex + 4) % data.size]
 
 
     init {
@@ -63,7 +60,6 @@ class PillCardsViewModel : ViewModel() {
                 cardOne = cardOneLeft,
                 cardTwo = cardTwoLeft,
                 cardThree = cardThreeLeft,
-                cardFour = cardFourLeft,
-                cardFive = cardFive)
+                cardFour = cardFourLeft)
     }
 }

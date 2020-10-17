@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.rodrigodominguez.mixanimationsmotionlayout.circularcards.CircularCardsHomeActivity
+import com.rodrigodominguez.mixanimationsmotionlayout.democonstraintset.DemoConstraintSetActivity
 import com.rodrigodominguez.mixanimationsmotionlayout.examplekeyposition.PositionKeyExampleActivity
 import com.rodrigodominguez.mixanimationsmotionlayout.flow.FlowDemoActivity
 import com.rodrigodominguez.mixanimationsmotionlayout.horizontalcarousel.HorizontalCarouselActivity
@@ -12,7 +13,7 @@ import com.rodrigodominguez.mixanimationsmotionlayout.rotationcard.RotationCardH
 import com.rodrigodominguez.mixanimationsmotionlayout.sensor.CardSensorActivity
 import com.rodrigodominguez.mixanimationsmotionlayout.starbucks.StarbucksDetailActivity
 import com.rodrigodominguez.mixanimationsmotionlayout.storiesinstagram.InstagramStoryHomeActivity
-import com.rodrigodominguez.mixanimationsmotionlayout.testbutton.TestButtonActivity
+import com.rodrigodominguez.mixanimationsmotionlayout.telegramheaderdemo.TelegramHeaderDemoActivity
 import com.rodrigodominguez.mixanimationsmotionlayout.verticalstackcards.VerticalStackCardsHomeActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -23,28 +24,28 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         storiesHome.setOnClickListener {
             startActivity(
-                Intent(this, InstagramStoryHomeActivity::class.java)
+                    Intent(this, InstagramStoryHomeActivity::class.java)
             )
         }
         circularCards.setOnClickListener {
             startActivity(
-                Intent(this, CircularCardsHomeActivity::class.java)
+                    Intent(this, CircularCardsHomeActivity::class.java)
             )
         }
         rotationCardScenes.setOnClickListener {
             startActivity(
-                Intent(this, RotationCardHomeActivity::class.java)
+                    Intent(this, RotationCardHomeActivity::class.java)
             )
         }
 
         verticalCards.setOnClickListener {
             startActivity(
-                Intent(this, VerticalStackCardsHomeActivity::class.java)
+                    Intent(this, VerticalStackCardsHomeActivity::class.java)
             )
         }
         positionKeyExamples.setOnClickListener {
             startActivity(
-                Intent(this, PositionKeyExampleActivity::class.java)
+                    Intent(this, PositionKeyExampleActivity::class.java)
             )
         }
 
@@ -56,19 +57,37 @@ class MainActivity : AppCompatActivity() {
 
         sensorButton.setOnClickListener {
             startActivity(
-                Intent(this, CardSensorActivity::class.java)
+                    Intent(this, CardSensorActivity::class.java)
             )
         }
 
         snakeCarousel.setOnClickListener {
             startActivity(
-                Intent(this, HorizontalCarouselActivity::class.java)
+                    Intent(this, HorizontalCarouselActivity::class.java)
             )
         }
 
-        pillCardsButton.setOnClickListener{
+        pillCardsButton.setOnClickListener {
             startActivity(
-                    Intent(this, TestButtonActivity::class.java)
+                    Intent(this, PillCardsActivity::class.java)
+            )
+        }
+
+        demosConstraintSet.setOnClickListener {
+            startActivity(
+                    Intent(this, DemoConstraintSetActivity::class.java)
+            )
+        }
+
+        flowDemo.setOnClickListener {
+            startActivity(
+                    Intent(this, FlowDemoActivity::class.java)
+            )
+        }
+
+        telegramHeaderDemo.setOnClickListener {
+            startActivity(
+                    Intent(this, TelegramHeaderDemoActivity::class.java)
             )
         }
     }

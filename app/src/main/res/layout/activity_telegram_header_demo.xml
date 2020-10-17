@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:id="@+id/telegramMotion"
+    app:layoutDescription="@xml/activity_telegram_header_scene"
+    tools:context=".telegramheaderdemo.TelegramHeaderDemoActivity">
+
+    <View
+        android:id="@+id/headerBackground"
+        android:layout_width="0dp"
+        android:layout_height="240dp"
+        android:background="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardProfile"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:cardElevation="0dp"
+        app:cardForegroundColor="@color/colorPrimary"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="56dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="340dp" />
+
+    <TextView
+        android:id="@+id/nameField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik_medium"
+        android:text="Rodrigo Dominguez"
+        android:textColor="@android:color/white"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/statusField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik_light"
+        android:text="En linea"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/nameField"
+        app:layout_constraintTop_toBottomOf="@id/nameField" />
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:padding="4dp"
+        android:src="@drawable/arrow_back_24px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/camera_alt_24px"
+        app:layout_constraintBottom_toBottomOf="@id/cardProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardProfile" />
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

@@ -6,6 +6,5 @@ data class PillCardModel(
         val cardOne: CreditCardModel,
         val cardTwo: CreditCardModel,
         val cardThree: CreditCardModel,
-        val cardFour: CreditCardModel,
-        val cardFive: CreditCardModel
+        val cardFour: CreditCardModel
 )

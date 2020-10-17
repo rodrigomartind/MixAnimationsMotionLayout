@@ -5,53 +5,71 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layoutDescription="@xml/activity_flow_demo_scene"
+    android:background="@android:color/white"
     tools:context=".flow.FlowDemoActivity">
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/cardFlow1"
+    <TextView
+        android:id="@+id/textFlow1"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        app:cardBackgroundColor="@color/colorPrimary" />
+        android:textSize="100sp"
+        android:text="😃" />
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/cardFlow2"
+    <TextView
+        android:id="@+id/textFlow2"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        app:cardBackgroundColor="@android:color/holo_orange_light" />
+        android:textSize="100sp"
+        android:text="😘" />
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/cardFlow3"
-        android:layout_width="100dp"
-
-        android:layout_height="100dp"
-        app:cardBackgroundColor="@android:color/holo_red_light" />
-
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/cardFlow4"
+    <TextView
+        android:id="@+id/textFlow3"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        app:cardBackgroundColor="@android:color/holo_green_light" />
+        android:textSize="100sp"
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/cardFlow5"
+        android:text="😛"/>
+
+    <TextView
+        android:id="@+id/textFlow4"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        app:cardBackgroundColor="@color/greenStarbucks" />
+        android:textSize="100sp"
+        android:text="😳" />
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/cardFlow6"
+    <TextView
+        android:id="@+id/textFlow5"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        app:cardBackgroundColor="@android:color/holo_blue_light" />
+        android:textSize="100sp"
+        android:text="🤓" />
+
+    <TextView
+        android:id="@+id/textFlow6"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:textSize="100sp"
+        android:text="😍" />
 
     <androidx.constraintlayout.helper.widget.Flow
         android:id="@+id/flow"
         android:layout_width="match_parent"
         android:layout_height="400dp"
         android:orientation="horizontal"
-        app:constraint_referenced_ids="cardFlow1, cardFlow2, cardFlow3, cardFlow4,cardFlow5, cardFlow6"
-        app:flow_maxElementsWrap="2"
+        app:constraint_referenced_ids="textFlow1, textFlow2, textFlow3, textFlow4,textFlow5, textFlow6"
         app:flow_wrapMode="aligned"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.helper.widget.Layer
+        android:id="@+id/layerOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="textFlow1, textFlow3, textFlow5"/>
+
+    <androidx.constraintlayout.helper.widget.Layer
+        android:id="@+id/layerTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="textFlow2, textFlow4, textFlow6"/>
 
 </androidx.constraintlayout.motion.widget.MotionLayout>
