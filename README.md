@@ -32,4 +32,11 @@ Pueden consultarme sus dudas por Twitter -> https://twitter.com/RodrigoMartinD
 <img src="https://user-images.githubusercontent.com/56642332/91056708-aae6e780-e5fc-11ea-9f4e-9bef53b8c6cc.gif"  width="300" />
 
 
+# House Of Cards
+<img src="https://user-images.githubusercontent.com/56642332/96339979-6280fe80-106e-11eb-9ea4-a1e59ae3e028.gif"  width="300" />
+
+# Emoji Dance
+<img src="https://user-images.githubusercontent.com/56642332/96340010-847a8100-106e-11eb-9a33-9263940bf805.gif"  width="300" />
+
+
 # by Rodrigo Dominguez
