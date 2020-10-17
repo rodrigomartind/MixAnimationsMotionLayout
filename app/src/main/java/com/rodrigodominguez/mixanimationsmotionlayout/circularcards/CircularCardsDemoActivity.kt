@@ -29,12 +29,10 @@ class CircularCardsDemoActivity : AppCompatActivity() {
                     when (currentId) {
                         R.id.secondCard -> {
                             motionLayout.progress = 0f
-                            motionLayout.setTransition(R.id.start, R.id.secondCard)
                             viewModel.swipeRight()
                         }
                         R.id.firstCard -> {
                             motionLayout.progress = 0f
-                            motionLayout.setTransition(R.id.start, R.id.secondCard)
                             viewModel.swipeLeft()
                         }
                     }

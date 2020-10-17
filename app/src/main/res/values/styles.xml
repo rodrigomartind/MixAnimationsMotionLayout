@@ -7,4 +7,16 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="ShapeAppearanceOverlay.App.CornerCut" parent="">
+        <item name="cornerSize">15dp</item>
+    </style>
+
+
+    <style name="ShapeAppearanceOverlay.App.CornerCurve" parent="">
+        <item name="cornerSize">50dp</item>
+        <item name="backgroundColor">#ffffff</item>
+        <item name="cornerFamily">rounded</item>
+        <item name="android:background">#ffffff</item>
+    </style>
+
 </resources>

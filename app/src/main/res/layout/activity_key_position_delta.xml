@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:motionDebug="SHOW_PATH"
+    android:id="@+id/motionDelta"
     android:background="@android:color/black"
     app:layoutDescription="@xml/activity_key_position_delta_scene"
     tools:context=".examplekeyposition.KeyPositionDeltaActivity">

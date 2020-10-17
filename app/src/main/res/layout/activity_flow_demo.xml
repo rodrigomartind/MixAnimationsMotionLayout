@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_flow_demo_scene"
+    android:background="@android:color/white"
+    tools:context=".flow.FlowDemoActivity">
+
+    <TextView
+        android:id="@+id/textFlow1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:textSize="100sp"
+        android:text="😃" />
+
+    <TextView
+        android:id="@+id/textFlow2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:textSize="100sp"
+        android:text="😘" />
+
+    <TextView
+        android:id="@+id/textFlow3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:textSize="100sp"
+
+        android:text="😛"/>
+
+    <TextView
+        android:id="@+id/textFlow4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:textSize="100sp"
+        android:text="😳" />
+
+    <TextView
+        android:id="@+id/textFlow5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:textSize="100sp"
+        android:text="🤓" />
+
+    <TextView
+        android:id="@+id/textFlow6"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:textSize="100sp"
+        android:text="😍" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="horizontal"
+        app:constraint_referenced_ids="textFlow1, textFlow2, textFlow3, textFlow4,textFlow5, textFlow6"
+        app:flow_wrapMode="aligned"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.helper.widget.Layer
+        android:id="@+id/layerOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="textFlow1, textFlow3, textFlow5"/>
+
+    <androidx.constraintlayout.helper.widget.Layer
+        android:id="@+id/layerTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="textFlow2, textFlow4, textFlow6"/>
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

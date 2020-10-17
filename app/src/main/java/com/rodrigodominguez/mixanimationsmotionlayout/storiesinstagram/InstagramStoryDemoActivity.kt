@@ -44,7 +44,6 @@ class InstagramStoryDemoActivity : AppCompatActivity() {
                         R.id.end -> {
                             storyMotionDetail.progress = 0f
                             storyMotionLayout.progress = 0f
-                            storyMotionLayout.setTransition(R.id.start, R.id.end)
                             viewModel.swipe()
                         }
                     }
