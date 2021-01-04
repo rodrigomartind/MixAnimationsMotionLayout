@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_fleep_scene"
+    tools:context=".fleep.FleepActivity">
+
+    <ImageView
+        android:id="@+id/previousFleep"
+        android:layout_width="380dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="72dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/startFleep"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="72dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/nextFleep"
+        android:layout_width="380dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="72dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.constraintlayout.helper.widget.Carousel
+        android:id="@+id/carouselFleeps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:carousel_backwardTransition="@+id/backwardFleep"
+        app:carousel_firstView="@id/startFleep"
+        app:carousel_forwardTransition="@+id/forwardFleep"
+        app:carousel_nextState="@+id/nextFleep"
+        app:carousel_previousState="@+id/previousFleep"
+        app:constraint_referenced_ids="previousFleep, startFleep, nextFleep" />
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

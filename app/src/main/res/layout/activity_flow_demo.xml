@@ -2,10 +2,9 @@
 <androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="410dp"
+    android:layout_height="720dp"
     app:layoutDescription="@xml/activity_flow_demo_scene"
-    android:background="@android:color/white"
     tools:context=".flow.FlowDemoActivity">
 
     <TextView
@@ -13,12 +12,15 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:textSize="100sp"
+        android:textColor="@android:color/black"
         android:text="😃" />
 
     <TextView
         android:id="@+id/textFlow2"
         android:layout_width="100dp"
         android:layout_height="100dp"
+        android:textColor="@android:color/black"
+
         android:textSize="100sp"
         android:text="😘" />
 
@@ -27,6 +29,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:textSize="100sp"
+        android:textColor="@android:color/black"
 
         android:text="😛"/>
 
@@ -35,6 +38,8 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:textSize="100sp"
+        android:textColor="@android:color/black"
+
         android:text="😳" />
 
     <TextView
@@ -42,12 +47,16 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:textSize="100sp"
+        android:textColor="@android:color/black"
+
         android:text="🤓" />
 
     <TextView
         android:id="@+id/textFlow6"
         android:layout_width="100dp"
         android:layout_height="100dp"
+        android:textColor="@android:color/black"
+
         android:textSize="100sp"
         android:text="😍" />
 

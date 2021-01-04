@@ -10,61 +10,80 @@
 
 
     <com.google.android.material.card.MaterialCardView
+        android:id="@+id/itemInvisible"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="8dp"
+        android:alpha="0"
+        android:layout_marginBottom="56dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
         android:id="@+id/itemOne"
         android:layout_width="150dp"
-        android:layout_height="0dp"
+        android:layout_height="100dp"
         app:cardCornerRadius="8dp"
         android:layout_marginStart="16dp"
         app:cardBackgroundColor="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintDimensionRatio="16:12"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginBottom="56dp"/>
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/itemTwo"
         android:layout_width="200dp"
-        android:layout_height="0dp"
+        android:layout_height="100dp"
         app:cardCornerRadius="8dp"
         app:cardBackgroundColor="@color/colorPrimaryDark"
         android:layout_marginStart="16dp"
         app:layout_constraintBottom_toBottomOf="@id/itemOne"
-        app:layout_constraintDimensionRatio="16:12"
         app:layout_constraintStart_toEndOf="@id/itemOne" />
 
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/itemThree"
         android:layout_width="200dp"
-        android:layout_height="0dp"
+        android:layout_height="100dp"
         app:cardCornerRadius="8dp"
         app:cardBackgroundColor="@color/design_default_color_secondary"
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toTopOf="@id/itemTwo"
-        app:layout_constraintDimensionRatio="16:12"
         app:layout_constraintStart_toStartOf="@id/itemTwo" />
 
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/itemFour"
         android:layout_width="200dp"
-        android:layout_height="0dp"
+        android:layout_height="100dp"
         app:cardCornerRadius="34dp"
         app:cardBackgroundColor="@color/colorPrimary"
         android:layout_marginStart="16dp"
         app:layout_constraintBottom_toBottomOf="@id/itemThree"
-        app:layout_constraintDimensionRatio="16:12"
         app:layout_constraintStart_toEndOf="@id/itemThree" />
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/itemFive"
         android:layout_width="200dp"
-        android:layout_height="0dp"
+        android:layout_height="100dp"
         app:cardCornerRadius="34dp"
         app:cardBackgroundColor="@color/colorPrimary"
         android:layout_marginStart="16dp"
         app:layout_constraintBottom_toBottomOf="@id/itemFour"
-        app:layout_constraintDimensionRatio="16:12"
         app:layout_constraintStart_toEndOf="@id/itemFour" />
+
+
+    <androidx.constraintlayout.helper.widget.Carousel
+        android:id="@+id/carouselSnake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:carousel_backwardTransition="@+id/backwardSnake"
+        app:carousel_firstView="@id/itemOne"
+        app:carousel_forwardTransition="@+id/forwardSnake"
+        app:carousel_nextState="@+id/nextSnake"
+        app:carousel_infinite="true"
+        app:carousel_previousState="@+id/previousSnake"
+        app:constraint_referenced_ids="itemInvisible, itemOne, itemTwo, itemThree, itemFour, itemFive" />
 
 </androidx.constraintlayout.motion.widget.MotionLayout>

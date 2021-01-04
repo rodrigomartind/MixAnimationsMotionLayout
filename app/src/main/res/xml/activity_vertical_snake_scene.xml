@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:autoTransition="animateToStart"
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@+id/start"
+        motion:duration="1000"
+        motion:motionInterpolator="linear">
+        <OnSwipe
+            motion:dragDirection="dragClockwise"
+            motion:onTouchUp="stop"
+            motion:rotationCenterId="@+id/guidelineView1" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint android:id="@+id/cardSnake2">
+            <Transform
+                android:rotation="180"
+                motion:transformPivotTarget="@+id/guidelineView2" />
+        </Constraint>
+
+
+        <Constraint android:id="@+id/cardSnake2_1">
+            <Transform
+                android:rotation="150"
+                motion:transformPivotTarget="@+id/guidelineView2" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cardSnake2_2">
+            <Transform
+                android:rotation="120"
+                motion:transformPivotTarget="@+id/guidelineView2" />
+        </Constraint>
+
+
+        <Constraint android:id="@+id/cardSnake2_3">
+            <Transform
+                android:rotation="90"
+                motion:transformPivotTarget="@+id/guidelineView2" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cardSnake2_4">
+            <Transform
+                android:rotation="60"
+                motion:transformPivotTarget="@+id/guidelineView2" />
+        </Constraint>
+
+
+        <Constraint android:id="@+id/cardSnake2_5">
+            <Transform
+                android:rotation="30"
+                motion:transformPivotTarget="@+id/guidelineView2" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cardSnake2_6">
+            <Transform
+                android:rotation="0"
+                motion:transformPivotTarget="@+id/guidelineView2" />
+        </Constraint>
+
+
+        <Constraint android:id="@+id/cardSnake1">
+            <Transform
+                android:rotation="180"
+                motion:transformPivotTarget="@+id/guidelineView1" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cardSnake1_1">
+            <Transform
+                android:rotation="210"
+                motion:transformPivotTarget="@+id/guidelineView1" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cardSnake1_2">
+            <Transform
+                android:rotation="240"
+                motion:transformPivotTarget="@+id/guidelineView1" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cardSnake1_3">
+            <Transform
+                android:rotation="270"
+                motion:transformPivotTarget="@+id/guidelineView1" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cardSnake1_4">
+            <Transform
+                android:rotation="300"
+                motion:transformPivotTarget="@+id/guidelineView1" />
+        </Constraint>
+
+
+        <Constraint android:id="@+id/cardSnake1_5">
+            <Transform
+                android:rotation="330"
+                motion:transformPivotTarget="@+id/guidelineView1" />
+        </Constraint>
+
+
+        <Constraint android:id="@+id/cardSnake1_6">
+            <Transform
+                android:rotation="360"
+                motion:transformPivotTarget="@+id/guidelineView1" />
+        </Constraint>
+
+
+
+
+        <Constraint android:id="@+id/cardSnake0">
+            <Transform
+                android:rotation="180"
+                motion:transformPivotTarget="@+id/guidelineView0" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cardSnake0_1">
+            <Transform
+                android:rotation="150"
+                motion:transformPivotTarget="@+id/guidelineView0" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cardSnake0_2">
+            <Transform
+                android:rotation="120"
+                motion:transformPivotTarget="@+id/guidelineView0" />
+        </Constraint>
+
+
+        <Constraint android:id="@+id/cardSnake0_3">
+            <Transform
+                android:rotation="90"
+                motion:transformPivotTarget="@+id/guidelineView0" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cardSnake0_4">
+            <Transform
+                android:rotation="60"
+                motion:transformPivotTarget="@+id/guidelineView0" />
+        </Constraint>
+
+
+        <Constraint android:id="@+id/cardSnake0_5">
+            <Transform
+                android:rotation="30"
+                motion:transformPivotTarget="@+id/guidelineView0" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cardSnake0_6">
+            <Transform
+                android:rotation="0"
+                motion:transformPivotTarget="@+id/guidelineView0" />
+        </Constraint>
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint android:id="@+id/cardSnake2">
+            <Transform
+                android:rotation="0"
+                motion:transformPivotTarget="@+id/guidelineView2" />
+        </Constraint>
+
+
+
+
+        <Constraint android:id="@+id/cardSnake1">
+            <Transform
+                android:rotation="360"
+                motion:transformPivotTarget="@+id/guidelineView1" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cardSnake1_1">
+            <Transform
+                android:rotation="360"
+                motion:transformPivotTarget="@+id/guidelineView1" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cardSnake1_2">
+            <Transform
+                android:rotation="360"
+                motion:transformPivotTarget="@+id/guidelineView1" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cardSnake1_3">
+            <Transform
+                android:rotation="360"
+                motion:transformPivotTarget="@+id/guidelineView1" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cardSnake1_4">
+            <Transform
+                android:rotation="360"
+                motion:transformPivotTarget="@+id/guidelineView1" />
+        </Constraint>
+
+
+        <Constraint android:id="@+id/cardSnake1_5">
+            <Transform
+                android:rotation="360"
+                motion:transformPivotTarget="@+id/guidelineView1" />
+        </Constraint>
+
+
+        <Constraint android:id="@+id/cardSnake1_6">
+            <Transform
+                android:rotation="360"
+                motion:transformPivotTarget="@+id/guidelineView1" />
+        </Constraint>
+
+
+
+
+
+        <Constraint android:id="@+id/cardSnake0">
+            <Transform
+                android:rotation="0"
+                motion:transformPivotTarget="@+id/guidelineView0" />
+        </Constraint>
+    </ConstraintSet>
+</MotionScene>

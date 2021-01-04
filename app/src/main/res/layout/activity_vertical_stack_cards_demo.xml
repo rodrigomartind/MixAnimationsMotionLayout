@@ -12,7 +12,6 @@
         android:id="@+id/cardTransparent"
         android:layout_width="256dp"
         android:layout_height="162dp"
-        app:layout_constraintDimensionRatio="19:9"
         android:rotationX="50"
         android:alpha="0.0"
         android:elevation="0dp"

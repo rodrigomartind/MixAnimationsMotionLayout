@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:autoTransition="animateToEnd"
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="7000">
+       <KeyFrameSet>
+           <KeyPosition
+               motion:motionTarget="@+id/cardDemoLatamOne"
+               motion:framePosition="50"
+               motion:keyPositionType="parentRelative"
+               motion:percentX="0.5"
+               motion:percentY="0.1" />
+       </KeyFrameSet>
+        <OnSwipe motion:touchAnchorId="@+id/cardDemoLatamOne" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/cardDemoLatamOne"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="24dp"
+            motion:layout_constraintStart_toStartOf="parent">
+            <CustomAttribute
+                motion:attributeName="cardElevation"
+                motion:customDimension="6dp" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/cardDemoLatamTwo"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="24dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:rotation="20"
+            android:rotationY="-0">
+            <CustomAttribute
+                motion:attributeName="cardElevation"
+                motion:customDimension="4dp" />
+        </Constraint>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/cardDemoLatamOne"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="24dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:rotation="20">
+            <CustomAttribute
+                motion:attributeName="cardElevation"
+                motion:customDimension="4dp" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/cardDemoLatamTwo"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="24dp"
+            motion:layout_constraintStart_toStartOf="parent">
+            <CustomAttribute
+                motion:attributeName="cardElevation"
+                motion:customDimension="6dp" />
+        </Constraint>
+    </ConstraintSet>
+</MotionScene>

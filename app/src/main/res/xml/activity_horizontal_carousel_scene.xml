@@ -3,109 +3,64 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <Transition
-        app:constraintSetEnd="@+id/end"
+        android:id="@+id/forwardSnake"
+        app:constraintSetEnd="@+id/nextSnake"
         app:constraintSetStart="@id/start"
         app:duration="400">
         <OnSwipe
             app:dragDirection="dragDown"
             app:onTouchUp="autoComplete"
             app:touchRegionId="@id/itemThree" />
-    </Transition>F
+    </Transition>
 
-    <ConstraintSet android:id="@+id/start">
-        <Constraint android:id="@+id/itemOne">
+    <Transition
+        android:id="@+id/backwardSnake"
+        app:constraintSetEnd="@+id/previousSnake"
+        app:constraintSetStart="@id/start"
+        app:duration="1000">
+        <OnSwipe
+            app:dragDirection="dragUp"
+            app:onTouchUp="autoComplete"
+            app:touchRegionId="@id/itemThree" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/previousSnake">
+
+        <Constraint android:id="@+id/itemInvisible">
             <Layout
                 android:layout_width="100dp"
-                android:layout_height="0dp"
-                app:cardCornerRadius="34dp"
+                android:layout_height="100dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginBottom="64dp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintDimensionRatio="16:12"
                 app:layout_constraintStart_toStartOf="parent" />
+            <PropertySet android:alpha="1" />
         </Constraint>
-
-        <Constraint android:id="@+id/itemTwo">
-            <Layout
-                android:layout_width="200dp"
-                android:layout_height="0dp"
-                app:cardCornerRadius="34dp"
-                android:layout_marginStart="16dp"
-                app:layout_constraintBottom_toBottomOf="@id/itemOne"
-                app:layout_constraintDimensionRatio="16:12"
-                app:layout_constraintStart_toEndOf="@id/itemOne" />
-        </Constraint>
-
-        <Constraint android:id="@+id/itemThree">
-            <Layout
-                android:layout_width="200dp"
-                android:layout_height="0dp"
-                android:layout_marginBottom="16dp"
-                app:layout_constraintBottom_toTopOf="@id/itemTwo"
-                app:layout_constraintDimensionRatio="16:12"
-                app:layout_constraintStart_toStartOf="@id/itemTwo" />
-            <CustomAttribute
-                app:attributeName="radius"
-                app:customDimension="8dp" />
-            <CustomAttribute
-                app:attributeName="cardCornerRadius"
-                app:customDimension="24dp" />
-        </Constraint>
-
-        <Constraint android:id="@+id/itemFour">
-            <Layout
-                android:layout_width="200dp"
-                android:layout_height="0dp"
-                android:layout_marginStart="16dp"
-                app:layout_constraintBottom_toBottomOf="@id/itemThree"
-                app:layout_constraintDimensionRatio="16:12"
-                app:layout_constraintStart_toEndOf="@id/itemThree" />
-            <CustomAttribute
-                app:attributeName="radius"
-                app:customDimension="8dp" />
-        </Constraint>
-
-        <Constraint android:id="@+id/itemFive">
-            <PropertySet android:alpha="0"/>
-        </Constraint>
-    </ConstraintSet>
-
-    <ConstraintSet android:id="@+id/end">
         <Constraint android:id="@+id/itemOne">
             <Layout
-                android:layout_width="100dp"
-                android:layout_height="0dp"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginBottom="64dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintDimensionRatio="16:12"
-                app:layout_constraintEnd_toStartOf="parent" />
-            <PropertySet android:alpha="0" />
-            <CustomAttribute
-                app:attributeName="radius"
-                app:customDimension="8dp" />
+                app:cardCornerRadius="34dp"
+                app:layout_constraintBottom_toBottomOf="@id/itemInvisible"
+                app:layout_constraintStart_toEndOf="@id/itemInvisible" />
         </Constraint>
 
         <Constraint android:id="@+id/itemTwo">
             <Layout
-                android:layout_width="100dp"
-                android:layout_height="0dp"
-                android:layout_marginStart="16dp"
-                app:layout_constraintBottom_toBottomOf="@id/itemOne"
-                app:layout_constraintDimensionRatio="16:12"
-                app:layout_constraintStart_toEndOf="@id/itemOne" />
-            <CustomAttribute
-                app:attributeName="radius"
-                app:customDimension="8dp" />
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintBottom_toTopOf="@id/itemOne"
+                app:layout_constraintStart_toStartOf="@id/itemOne" />
         </Constraint>
 
         <Constraint android:id="@+id/itemThree">
             <Layout
                 android:layout_width="200dp"
-                android:layout_height="0dp"
+                android:layout_height="100dp"
                 android:layout_marginStart="16dp"
                 app:layout_constraintBottom_toBottomOf="@id/itemTwo"
-                app:layout_constraintDimensionRatio="16:12"
                 app:layout_constraintStart_toEndOf="@id/itemTwo" />
             <CustomAttribute
                 app:attributeName="radius"
@@ -118,10 +73,122 @@
         <Constraint android:id="@+id/itemFour">
             <Layout
                 android:layout_width="200dp"
-                android:layout_height="0dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintBottom_toBottomOf="@id/itemThree"
+                app:layout_constraintStart_toEndOf="@id/itemThree" />
+            <CustomAttribute
+                app:attributeName="radius"
+                app:customDimension="8dp" />
+        </Constraint>
+
+        <Constraint android:id="@+id/itemFive">
+            <PropertySet android:alpha="0" />
+        </Constraint>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint android:id="@+id/itemOne">
+            <Layout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="64dp"
+                app:cardCornerRadius="34dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </Constraint>
+
+        <Constraint android:id="@+id/itemTwo">
+            <Layout
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="16dp"
+                app:cardCornerRadius="34dp"
+                app:layout_constraintBottom_toBottomOf="@id/itemOne"
+                app:layout_constraintStart_toEndOf="@id/itemOne" />
+        </Constraint>
+
+        <Constraint android:id="@+id/itemThree">
+            <Layout
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintBottom_toTopOf="@id/itemTwo"
+                app:layout_constraintStart_toStartOf="@id/itemTwo" />
+            <CustomAttribute
+                app:attributeName="radius"
+                app:customDimension="8dp" />
+            <CustomAttribute
+                app:attributeName="cardCornerRadius"
+                app:customDimension="24dp" />
+        </Constraint>
+
+        <Constraint android:id="@+id/itemFour">
+            <Layout
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintBottom_toBottomOf="@id/itemThree"
+                app:layout_constraintStart_toEndOf="@id/itemThree" />
+            <CustomAttribute
+                app:attributeName="radius"
+                app:customDimension="8dp" />
+        </Constraint>
+
+        <Constraint android:id="@+id/itemFive">
+            <PropertySet android:alpha="0" />
+        </Constraint>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/nextSnake">
+        <Constraint android:id="@+id/itemOne">
+            <Layout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="64dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="parent" />
+            <PropertySet android:alpha="0" />
+            <CustomAttribute
+                app:attributeName="radius"
+                app:customDimension="8dp" />
+        </Constraint>
+
+        <Constraint android:id="@+id/itemTwo">
+            <Layout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintBottom_toBottomOf="@id/itemOne"
+                app:layout_constraintStart_toEndOf="@id/itemOne" />
+            <CustomAttribute
+                app:attributeName="radius"
+                app:customDimension="8dp" />
+        </Constraint>
+
+        <Constraint android:id="@+id/itemThree">
+            <Layout
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintBottom_toBottomOf="@id/itemTwo"
+                app:layout_constraintStart_toEndOf="@id/itemTwo" />
+            <CustomAttribute
+                app:attributeName="radius"
+                app:customDimension="8dp" />
+            <CustomAttribute
+                app:attributeName="cardCornerRadius"
+                app:customDimension="24dp" />
+        </Constraint>
+
+        <Constraint android:id="@+id/itemFour">
+            <Layout
+                android:layout_width="200dp"
+                android:layout_height="100dp"
                 android:layout_marginBottom="16dp"
                 app:layout_constraintBottom_toTopOf="@id/itemThree"
-                app:layout_constraintDimensionRatio="16:12"
                 app:layout_constraintStart_toStartOf="@id/itemThree" />
             <CustomAttribute
                 app:attributeName="radius"
@@ -132,10 +199,12 @@
         </Constraint>
 
         <Constraint android:id="@+id/itemFive">
-            <PropertySet android:alpha="1"/>
+            <PropertySet android:alpha="1" />
             <CustomAttribute
                 app:attributeName="cardCornerRadius"
                 app:customDimension="24dp" />
         </Constraint>
     </ConstraintSet>
+
+
 </MotionScene>

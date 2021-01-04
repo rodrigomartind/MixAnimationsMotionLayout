@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6403558"
+    app:layoutDescription="@xml/activity_food_circle_tabs_scene"
+    tools:context=".pivotrotation.FoodCircleTabsActivity">
+
+    <View
+        android:id="@+id/backgroundCircleTab"
+        android:layout_width="680dp"
+        android:layout_height="680dp"
+        android:background="@drawable/shape_circle_pyg_violet_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+    <View
+        android:id="@+id/backgroundCircleButton"
+        android:layout_width="480dp"
+        android:layout_height="480dp"
+        android:background="@drawable/shape_circle_pyg_violet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+
+    <View
+        android:id="@+id/backgroundCircleSelectedItem"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:background="@drawable/shape_circular"
+        app:layout_constraintCircle="@id/buttonAddToCart"
+        app:layout_constraintCircleAngle="0"
+        app:layout_constraintCircleRadius="232dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonAddToCart"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_marginBottom="32dp"
+        android:text="Add to Cart"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:cornerRadius="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/dial1"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/ic__01_hotdog"
+        app:layout_constraintCircle="@id/buttonAddToCart"
+        app:layout_constraintCircleAngle="0"
+        app:layout_constraintCircleRadius="232dp" />
+
+
+    <ImageView
+        android:id="@+id/dial2"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/ic__02_yogurt"
+        app:layout_constraintCircle="@id/buttonAddToCart"
+        app:layout_constraintCircleAngle="0"
+        app:layout_constraintCircleRadius="232dp" />
+
+
+    <ImageView
+        android:id="@+id/dial3"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/ic__03_milk"
+        app:layout_constraintCircle="@id/buttonAddToCart"
+        app:layout_constraintCircleAngle="0"
+        app:layout_constraintCircleRadius="232dp" />
+
+
+    <ImageView
+        android:id="@+id/dial4"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/ic__04_carrot"
+        app:layout_constraintCircle="@id/buttonAddToCart"
+        app:layout_constraintCircleAngle="0"
+        app:layout_constraintCircleRadius="232dp" />
+
+    <ImageView
+        android:id="@+id/dial5"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/ic__05_sushi"
+        app:layout_constraintCircle="@id/buttonAddToCart"
+        app:layout_constraintCircleAngle="0"
+        app:layout_constraintCircleRadius="232dp" />
+
+
+    <ImageView
+        android:id="@+id/dial6"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/ic__06_beer"
+        app:layout_constraintCircle="@id/buttonAddToCart"
+        app:layout_constraintCircleAngle="0"
+        app:layout_constraintCircleRadius="232dp" />
+
+
+    <ImageView
+        android:id="@+id/dial7"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/ic__07_pizza"
+        app:layout_constraintCircle="@id/buttonAddToCart"
+        app:layout_constraintCircleAngle="0"
+        app:layout_constraintCircleRadius="232dp" />
+
+
+    <ImageView
+        android:id="@+id/dial8"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/ic__08_donut"
+        app:layout_constraintCircle="@id/buttonAddToCart"
+        app:layout_constraintCircleAngle="0"
+        app:layout_constraintCircleRadius="232dp" />
+
+    <ImageView
+        android:id="@+id/dial9"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/ic__09_meat"
+        app:layout_constraintCircle="@id/buttonAddToCart"
+        app:layout_constraintCircleAngle="0"
+        app:layout_constraintCircleRadius="232dp" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
