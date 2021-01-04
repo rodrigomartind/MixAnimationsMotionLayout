@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.rodrigodominguez.mixanimationsmotionlayout">
 
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature
+        android:name="android.hardware.camera.ar"
+        android:required="false" />
     <uses-feature
         android:name="android.hardware.accelerometer"
         android:required="true" />
@@ -21,7 +27,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".democonstraintset.MotionDemoActivity"></activity>
+        <activity android:name=".verticalsnake.VerticalSnakeActivity"></activity>
+        <activity android:name=".fleep.FleepActivity" />
+        <activity android:name=".pivotrotation.FoodCircleTabsActivity" />
+        <activity android:name=".carouselhelper.CarouselHelperActivity" />
+        <activity android:name=".sampleskeycycle.KeyCycleSampleActivity" />
+
+        <meta-data
+            android:name="com.google.ar.core"
+            android:value="required" />
+
+        <activity android:name=".motionwithar.MotionAndAugmentedRealityActivity" />
+        <activity android:name=".democonstraintset.MotionDemoActivity" />
         <activity android:name=".democonstraintset.CustomAttributeDemoActivity" />
         <activity android:name=".democonstraintset.LayoutDemoActivity" />
         <activity android:name=".democonstraintset.PropertySetDemoActivity" />

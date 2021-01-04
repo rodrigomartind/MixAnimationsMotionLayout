@@ -1,12 +1,16 @@
 package com.rodrigodominguez.mixanimationsmotionlayout.horizontalcarousel
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import androidx.constraintlayout.helper.widget.Carousel
 import androidx.constraintlayout.motion.widget.MotionLayout
 import androidx.constraintlayout.motion.widget.TransitionAdapter
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.lifecycle.lifecycleScope
+import com.google.android.material.card.MaterialCardView
 import com.rodrigodominguez.mixanimationsmotionlayout.R
 import com.rodrigodominguez.mixanimationsmotionlayout.circularcards.CreditCardsViewModel
 import kotlinx.android.synthetic.main.activity_circular_cards_demo.*
@@ -18,68 +22,39 @@ import java.util.*
 import kotlin.concurrent.schedule
 
 class HorizontalCarouselActivity : AppCompatActivity() {
+    var colors = intArrayOf(
+        Color.parseColor("#81d4fa"),
+        Color.parseColor("#4fc3f7"),
+        Color.parseColor("#29b6f6"),
+        Color.parseColor("#03a9f4"),
+        Color.parseColor("#039be5"),
+        Color.parseColor("#0288d1"),
+        Color.parseColor("#0277bd"),
+        Color.parseColor("#01579b")
+    )
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_horizontal_carousel)
-        val viewModel = ViewModelProviders
-            .of(this)
-            .get(CreditCardsHorizontalViewModel::class.java)
-
-        viewModel
-            .modelStream
-            .observe(this, Observer {
-                bindCard(it)
-            })
-
-//        motionHorizontalParent.setTransitionListener(object : TransitionAdapter() {
-//            override fun onTransitionCompleted(motionLayout: MotionLayout, currentId: Int) {
-//                when (currentId) {
-//                    R.id.end -> {
-//                        motionLayout.progress = 0f
-//                        motionLayout.setTransition(R.id.start, R.id.end)
-//                        viewModel.swipeRight()
-//                    }
-////                    R.id.firstCard -> {
-////                        motionLayout.progress = 0f
-////                        motionLayout.setTransition(R.id.start, R.id.secondCard)
-////                        viewModel.swipeLeft()
-////                    }
-//                }
-//            }
-//        })
-
-        motionHorizontalParent.setTransitionListener(object : MotionLayout.TransitionListener {
-            override fun onTransitionTrigger(p0: MotionLayout?, p1: Int, p2: Boolean, p3: Float) {
-            }
-
-            override fun onTransitionStarted(p0: MotionLayout?, p1: Int, p2: Int) {
-            }
-
-            override fun onTransitionChange(p0: MotionLayout?, p1: Int, p2: Int, p3: Float) {
-            }
-
-            override fun onTransitionCompleted(p0: MotionLayout?, p1: Int) {
-                p0?.post {
-                    when (p1) {
-                        R.id.end -> {
-                            p0.progress = 0f
-                            viewModel.swipeRight()
-                        }
-                    }
-                }
-
-            }
-
-        })
+        setupCarousel()
     }
 
-    private fun bindCard(cards: CreditCardsHorizontalModel?) {
-        cards?.let {
-            itemOne.setBackgroundColor(it.cardOne.backgroundColor)
-            itemTwo.setBackgroundColor(it.cardTwo.backgroundColor)
-            itemThree.setBackgroundColor(it.cardThree.backgroundColor)
-            itemFour.setBackgroundColor(it.cardFour.backgroundColor)
-            itemFive.setBackgroundColor(it.cardFive.backgroundColor)
-        }
+    private fun setupCarousel() {
+        val carousel = findViewById<Carousel>(R.id.carouselSnake) ?: return
+        val numImages = colors.size
+
+        carousel.setAdapter(object : Carousel.Adapter {
+            override fun count(): Int {
+                return numImages
+            }
+
+            override fun populate(view: View, index: Int) {
+                if (view is MaterialCardView) {
+                    view.setBackgroundColor(colors[index])
+                }
+            }
+
+            override fun onNewItem(index: Int) {
+            }
+        })
     }
 }

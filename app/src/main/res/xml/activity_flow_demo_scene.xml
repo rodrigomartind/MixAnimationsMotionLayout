@@ -13,11 +13,11 @@
             motion:touchRegionId="@id/textFlow1" />
     </Transition>
 
-    <Transition
-        motion:autoTransition="animateToEnd"
-        motion:constraintSetEnd="@+id/layerDemo"
-        motion:constraintSetStart="@id/expand"
-        motion:duration="1500" />
+<!--    <Transition-->
+<!--        motion:autoTransition="animateToEnd"-->
+<!--        motion:constraintSetEnd="@+id/layerDemo"-->
+<!--        motion:constraintSetStart="@id/expand"-->
+<!--        motion:duration="1500" />-->
 
     <ConstraintSet android:id="@+id/start">
         <Constraint android:id="@id/flow">

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:autoTransition="animateToStart"
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@+id/start"
+        motion:duration="1000"
+        motion:motionInterpolator="linear">
+        <OnSwipe
+            motion:dragDirection="dragClockwise"
+            motion:onTouchUp="stop"
+            motion:rotationCenterId="@+id/backgroundCircleTab" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint android:id="@+id/dial1">
+            <Transform
+                android:rotation="-300"
+                motion:transformPivotTarget="@+id/backgroundCircleTab" />
+        </Constraint>
+
+        <Constraint android:id="@+id/dial2">
+            <Transform
+                android:rotation="-260"
+                motion:transformPivotTarget="@+id/backgroundCircleTab" />
+        </Constraint>
+
+
+        <Constraint android:id="@+id/dial3">
+            <Transform
+                android:rotation="-220"
+                motion:transformPivotTarget="@+id/backgroundCircleTab" />
+        </Constraint>
+
+        <Constraint android:id="@+id/dial4">
+            <Transform
+                android:rotation="-180"
+                motion:transformPivotTarget="@+id/backgroundCircleTab" />
+        </Constraint>
+
+
+        <Constraint android:id="@+id/dial5">
+            <Transform
+                android:rotation="-140"
+                motion:transformPivotTarget="@+id/backgroundCircleTab" />
+        </Constraint>
+
+        <Constraint android:id="@+id/dial6">
+            <Transform
+                android:rotation="-100"
+                motion:transformPivotTarget="@+id/backgroundCircleTab" />
+        </Constraint>
+
+
+        <Constraint android:id="@+id/dial7">
+            <Transform
+                android:rotation="-60"
+                motion:transformPivotTarget="@+id/backgroundCircleTab" />
+        </Constraint>
+
+
+        <Constraint android:id="@+id/dial8">
+            <Transform
+                android:rotation="-20"
+                motion:transformPivotTarget="@+id/backgroundCircleTab" />
+        </Constraint>
+
+        <Constraint android:id="@+id/dial9">
+            <Transform
+                android:rotation="20"
+                motion:transformPivotTarget="@+id/backgroundCircleTab" />
+        </Constraint>
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint android:id="@+id/dial1">
+            <Transform
+                android:rotation="0"
+                motion:transformPivotTarget="@+id/backgroundCircleTab" />
+        </Constraint>
+
+        <Constraint android:id="@+id/dial2">
+            <Transform
+                android:rotation="40"
+                motion:transformPivotTarget="@+id/backgroundCircleTab" />
+        </Constraint>
+
+
+        <Constraint android:id="@+id/dial3">
+            <Transform
+                android:rotation="80"
+                motion:transformPivotTarget="@+id/backgroundCircleTab" />
+        </Constraint>
+
+        <Constraint android:id="@+id/dial4">
+            <Transform
+                android:rotation="120"
+                motion:transformPivotTarget="@+id/backgroundCircleTab" />
+        </Constraint>
+
+
+        <Constraint android:id="@+id/dial5">
+            <Transform
+                android:rotation="160"
+                motion:transformPivotTarget="@+id/backgroundCircleTab" />
+        </Constraint>
+
+        <Constraint android:id="@+id/dial6">
+            <Transform
+                android:rotation="200"
+                motion:transformPivotTarget="@+id/backgroundCircleTab" />
+        </Constraint>
+
+
+        <Constraint android:id="@+id/dial7">
+            <Transform
+                android:rotation="240"
+                motion:transformPivotTarget="@+id/backgroundCircleTab" />
+        </Constraint>
+
+
+        <Constraint android:id="@+id/dial8">
+            <Transform
+                android:rotation="280"
+                motion:transformPivotTarget="@+id/backgroundCircleTab" />
+        </Constraint>
+
+
+        <Constraint android:id="@+id/dial9">
+            <Transform
+                android:rotation="320"
+                motion:transformPivotTarget="@+id/backgroundCircleTab" />
+        </Constraint>
+    </ConstraintSet>
+</MotionScene>
