@@ -52,7 +52,7 @@ Pueden consultarme sus dudas por Twitter -> https://twitter.com/RodrigoMartinD
 
 
 # Carousel Helper - Cards Demo
-<img src="https://user-images.githubusercontent.com/56642332/103548698-f485ef80-4e84-11eb-8b4d-0d2ea017a504.gif"  width="300" />
+<img src="https://user-images.githubusercontent.com/56642332/103549404-1338b600-4e86-11eb-98c7-b9b3c0880856.gif"  width="300" />
 
 
 # Multi Snake Cards Demo
