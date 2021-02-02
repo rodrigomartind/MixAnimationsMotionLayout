@@ -58,5 +58,7 @@ Pueden consultarme sus dudas por Twitter -> https://twitter.com/RodrigoMartinD
 # Multi Snake Cards Demo
 <img src="https://user-images.githubusercontent.com/56642332/103549031-7d9d2680-4e85-11eb-8a1a-79d91150b97c.gif"  width="300" />
 
+# MODO Payment
+<img src="https://user-images.githubusercontent.com/24611045/106629650-cebe3a00-6559-11eb-80f8-5650171fabdb.mp4"  width="300" />
 
 # by Rodrigo Dominguez
