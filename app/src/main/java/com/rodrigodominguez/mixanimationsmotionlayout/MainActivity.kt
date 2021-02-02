@@ -9,6 +9,7 @@ import com.rodrigodominguez.mixanimationsmotionlayout.democonstraintset.DemoCons
 import com.rodrigodominguez.mixanimationsmotionlayout.examplekeyposition.PositionKeyExampleActivity
 import com.rodrigodominguez.mixanimationsmotionlayout.flow.FlowDemoActivity
 import com.rodrigodominguez.mixanimationsmotionlayout.horizontalcarousel.HorizontalCarouselActivity
+import com.rodrigodominguez.mixanimationsmotionlayout.modopay.ModoPaymentActivity
 import com.rodrigodominguez.mixanimationsmotionlayout.motionwithar.MotionAndAugmentedRealityActivity
 import com.rodrigodominguez.mixanimationsmotionlayout.pillcards.PillCardsActivity
 import com.rodrigodominguez.mixanimationsmotionlayout.pivotrotation.FoodCircleTabsActivity
@@ -116,6 +117,12 @@ class MainActivity : AppCompatActivity() {
         snakeActivity.setOnClickListener {
             startActivity(
                 Intent(this, VerticalSnakeActivity::class.java)
+            )
+        }
+
+        modoPaymentActivity.setOnClickListener {
+            startActivity(
+                    Intent(this, ModoPaymentActivity::class.java)
             )
         }
     }

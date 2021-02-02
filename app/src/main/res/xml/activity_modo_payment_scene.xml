@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000">
+        <KeyFrameSet></KeyFrameSet>
+        <OnSwipe
+            motion:touchAnchorId="@+id/swipeView"
+            motion:touchAnchorSide="bottom" />
+    </Transition>
+
+    <Transition
+        motion:autoTransition="animateToEnd"
+        motion:constraintSetEnd="@+id/congrats"
+        motion:constraintSetStart="@id/end"
+        motion:duration="300" />
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/swipeView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="32dp"
+            motion:layout_constraintBottom_toTopOf="@+id/textView7"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent">
+            <CustomAttribute
+                motion:attributeName="cardBackgroundColor"
+                motion:customColorValue="#004DBC" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/check"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="164dp"
+            android:alpha="0"
+            android:scaleX="0"
+            android:scaleY="0"
+            motion:layout_constraintEnd_toEndOf="@+id/view4"
+            motion:layout_constraintStart_toStartOf="@+id/view4"
+            motion:layout_constraintTop_toTopOf="parent" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/swipeView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="150dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent">
+            <CustomAttribute
+                motion:attributeName="cardBackgroundColor"
+                motion:customColorValue="#33D6C1" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/arrowUp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:scaleX="0"
+            android:scaleY="0"
+            motion:layout_constraintBottom_toBottomOf="@id/swipeView"
+            motion:layout_constraintEnd_toEndOf="@id/swipeView"
+            motion:layout_constraintStart_toStartOf="@id/swipeView"
+            motion:layout_constraintTop_toTopOf="@id/swipeView" />
+        <Constraint
+            android:id="@+id/check"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="164dp"
+            android:alpha="1"
+            android:scaleX="1"
+            android:scaleY="1"
+            motion:layout_constraintEnd_toEndOf="@+id/view4"
+            motion:layout_constraintStart_toStartOf="@+id/view4"
+            motion:layout_constraintTop_toTopOf="parent" />
+    </ConstraintSet>
+
+    <ConstraintSet
+        android:id="@+id/congrats"
+        motion:deriveConstraintsFrom="@+id/end">
+        <Constraint
+            android:id="@+id/swipeView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleY="18"
+            android:scaleX="18"
+            android:layout_marginTop="150dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"/>
+
+    </ConstraintSet>
+</MotionScene>
