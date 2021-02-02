@@ -7,12 +7,4 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="ShapeAppearanceOverlay.App.CornerCut" parent="">
-        <item name="cornerSize">15dp</item>
-    </style>
-
-    <style name="ShapeAppearance.App.CircleImageView" parent="">
-        <item name="cornerFamily">rounded</item>
-        <item name="cornerSize">24dp</item>
-    </style>
 </resources>

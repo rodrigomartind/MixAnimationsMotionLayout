@@ -27,15 +27,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".verticalsnake.VerticalSnakeActivity"></activity>
-        <activity android:name=".fleep.FleepActivity" />
+        <activity android:name=".modopay.ModoPaymentActivity"></activity>
+        <activity android:name=".verticalsnake.VerticalSnakeActivity" />
         <activity android:name=".pivotrotation.FoodCircleTabsActivity" />
         <activity android:name=".carouselhelper.CarouselHelperActivity" />
         <activity android:name=".sampleskeycycle.KeyCycleSampleActivity" />
 
         <meta-data
             android:name="com.google.ar.core"
-            android:value="required" />
+            android:value="optional" />
 
         <activity android:name=".motionwithar.MotionAndAugmentedRealityActivity" />
         <activity android:name=".democonstraintset.MotionDemoActivity" />
