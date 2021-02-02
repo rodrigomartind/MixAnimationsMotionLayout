@@ -4,6 +4,25 @@ Les comparto un mix de varias animaciones con MotionLayout.
 
 Pueden consultarme sus dudas por Twitter -> https://twitter.com/RodrigoMartinD
 
+# MODO Payment
+<img src="https://user-images.githubusercontent.com/24611045/106630234-6ae84100-655a-11eb-9598-5063d4460ec4.gif"  width="300" />
+
+# Food Demo
+<img src="https://user-images.githubusercontent.com/56642332/103547941-ceac1b00-4e83-11eb-8ff0-d67960dc3c09.gif"  width="300" />
+
+
+# Food Augmented Reality Demo
+<img src="https://user-images.githubusercontent.com/56642332/103548698-f485ef80-4e84-11eb-8b4d-0d2ea017a504.gif"  width="300" />
+
+
+# Carousel Helper - Cards Demo
+<img src="https://user-images.githubusercontent.com/56642332/103549404-1338b600-4e86-11eb-98c7-b9b3c0880856.gif"  width="300" />
+
+
+# Multi Snake Cards Demo
+<img src="https://user-images.githubusercontent.com/56642332/103549031-7d9d2680-4e85-11eb-8a1a-79d91150b97c.gif"  width="300" />
+
+
 # Circular Carousel
 <img src="https://user-images.githubusercontent.com/56642332/83661937-3cfec700-a59d-11ea-814d-be6369b79aa8.gif"  width="300" />
 
@@ -42,23 +61,5 @@ Pueden consultarme sus dudas por Twitter -> https://twitter.com/RodrigoMartinD
 # Telegram Demo
 <img src="https://user-images.githubusercontent.com/56642332/103547800-a3c1c700-4e83-11eb-96d5-0907ea871ec8.gif"  width="300" />
 
-
-# Food Demo
-<img src="https://user-images.githubusercontent.com/56642332/103547941-ceac1b00-4e83-11eb-8ff0-d67960dc3c09.gif"  width="300" />
-
-
-# Food Augmented Reality Demo
-<img src="https://user-images.githubusercontent.com/56642332/103548698-f485ef80-4e84-11eb-8b4d-0d2ea017a504.gif"  width="300" />
-
-
-# Carousel Helper - Cards Demo
-<img src="https://user-images.githubusercontent.com/56642332/103549404-1338b600-4e86-11eb-98c7-b9b3c0880856.gif"  width="300" />
-
-
-# Multi Snake Cards Demo
-<img src="https://user-images.githubusercontent.com/56642332/103549031-7d9d2680-4e85-11eb-8a1a-79d91150b97c.gif"  width="300" />
-
-# MODO Payment
-<img src="https://user-images.githubusercontent.com/24611045/106630234-6ae84100-655a-11eb-9598-5063d4460ec4.gif"  width="300" />
 
 # by Rodrigo Dominguez
