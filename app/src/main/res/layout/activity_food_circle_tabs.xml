@@ -55,87 +55,69 @@
         android:id="@+id/dial1"
         android:layout_width="56dp"
         android:layout_height="56dp"
-        android:src="@drawable/ic__01_hotdog"
-        app:layout_constraintCircle="@id/buttonAddToCart"
-        app:layout_constraintCircleAngle="0"
-        app:layout_constraintCircleRadius="232dp" />
+        android:src="@drawable/ic__01_hotdog"/>
 
 
     <ImageView
         android:id="@+id/dial2"
         android:layout_width="56dp"
         android:layout_height="56dp"
-        android:src="@drawable/ic__02_yogurt"
-        app:layout_constraintCircle="@id/buttonAddToCart"
-        app:layout_constraintCircleAngle="0"
-        app:layout_constraintCircleRadius="232dp" />
+        android:src="@drawable/ic__02_yogurt" />
 
 
     <ImageView
         android:id="@+id/dial3"
         android:layout_width="56dp"
         android:layout_height="56dp"
-        android:src="@drawable/ic__03_milk"
-        app:layout_constraintCircle="@id/buttonAddToCart"
-        app:layout_constraintCircleAngle="0"
-        app:layout_constraintCircleRadius="232dp" />
+        android:src="@drawable/ic__03_milk"/>
 
 
     <ImageView
         android:id="@+id/dial4"
         android:layout_width="56dp"
         android:layout_height="56dp"
-        android:src="@drawable/ic__04_carrot"
-        app:layout_constraintCircle="@id/buttonAddToCart"
-        app:layout_constraintCircleAngle="0"
-        app:layout_constraintCircleRadius="232dp" />
+        android:src="@drawable/ic__04_carrot"/>
 
     <ImageView
         android:id="@+id/dial5"
         android:layout_width="56dp"
         android:layout_height="56dp"
-        android:src="@drawable/ic__05_sushi"
-        app:layout_constraintCircle="@id/buttonAddToCart"
-        app:layout_constraintCircleAngle="0"
-        app:layout_constraintCircleRadius="232dp" />
+        android:src="@drawable/ic__05_sushi"/>
 
 
     <ImageView
         android:id="@+id/dial6"
         android:layout_width="56dp"
         android:layout_height="56dp"
-        android:src="@drawable/ic__06_beer"
-        app:layout_constraintCircle="@id/buttonAddToCart"
-        app:layout_constraintCircleAngle="0"
-        app:layout_constraintCircleRadius="232dp" />
+        android:src="@drawable/ic__06_beer" />
 
 
     <ImageView
         android:id="@+id/dial7"
         android:layout_width="56dp"
         android:layout_height="56dp"
-        android:src="@drawable/ic__07_pizza"
-        app:layout_constraintCircle="@id/buttonAddToCart"
-        app:layout_constraintCircleAngle="0"
-        app:layout_constraintCircleRadius="232dp" />
+        android:src="@drawable/ic__07_pizza" />
 
 
     <ImageView
         android:id="@+id/dial8"
         android:layout_width="56dp"
         android:layout_height="56dp"
-        android:src="@drawable/ic__08_donut"
-        app:layout_constraintCircle="@id/buttonAddToCart"
-        app:layout_constraintCircleAngle="0"
-        app:layout_constraintCircleRadius="232dp" />
+        android:src="@drawable/ic__08_donut"/>
 
     <ImageView
         android:id="@+id/dial9"
         android:layout_width="56dp"
         android:layout_height="56dp"
-        android:src="@drawable/ic__09_meat"
-        app:layout_constraintCircle="@id/buttonAddToCart"
-        app:layout_constraintCircleAngle="0"
-        app:layout_constraintCircleRadius="232dp" />
+        android:src="@drawable/ic__09_meat" />
+
+    <androidx.constraintlayout.helper.widget.CircularFlow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/circularFlow"
+        app:circularflow_viewCenter="@id/buttonAddToCart"
+        app:circularflow_defaultAngle="0"
+        app:circularflow_defaultRadius="232"
+        app:constraint_referenced_ids="dial1, dial2, dial3, dial4, dial5, dial6, dial7, dial8, dial9" />
 
 </androidx.constraintlayout.motion.widget.MotionLayout>
