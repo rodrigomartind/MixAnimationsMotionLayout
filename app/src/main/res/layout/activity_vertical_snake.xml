@@ -42,131 +42,86 @@
         android:id="@+id/cardSnake2"
         android:layout_width="50dp"
         android:layout_height="100dp"
-        app:cardBackgroundColor="#4a148c"
-        app:layout_constraintCircle="@id/guidelineView2"
-        app:layout_constraintCircleAngle="0"
-        app:layout_constraintCircleRadius="90dp" />
+        app:cardBackgroundColor="#4a148c"/>
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardSnake2_1"
         android:layout_width="50dp"
         android:layout_height="100dp"
-        app:cardBackgroundColor="#6a1b9a"
-        app:layout_constraintCircle="@id/guidelineView2"
-        app:layout_constraintCircleAngle="0"
-        app:layout_constraintCircleRadius="90dp" />
+        app:cardBackgroundColor="#6a1b9a" />
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardSnake2_2"
         android:layout_width="50dp"
         android:layout_height="100dp"
-        app:cardBackgroundColor="#7b1fa2"
-        app:layout_constraintCircle="@id/guidelineView2"
-        app:layout_constraintCircleAngle="0"
-        app:layout_constraintCircleRadius="90dp" />
+        app:cardBackgroundColor="#7b1fa2" />
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardSnake2_3"
         android:layout_width="50dp"
         android:layout_height="100dp"
-        app:cardBackgroundColor="#8e24aa"
-        app:layout_constraintCircle="@id/guidelineView2"
-        app:layout_constraintCircleAngle="0"
-        app:layout_constraintCircleRadius="90dp" />
+        app:cardBackgroundColor="#8e24aa"/>
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardSnake2_4"
         android:layout_width="50dp"
         android:layout_height="100dp"
-        app:cardBackgroundColor="#9c27b0"
-        app:layout_constraintCircle="@id/guidelineView2"
-        app:layout_constraintCircleAngle="0"
-        app:layout_constraintCircleRadius="90dp" />
+        app:cardBackgroundColor="#9c27b0" />
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardSnake2_5"
         android:layout_width="50dp"
         android:layout_height="100dp"
-        app:cardBackgroundColor="#ab47bc"
-        app:layout_constraintCircle="@id/guidelineView2"
-        app:layout_constraintCircleAngle="0"
-        app:layout_constraintCircleRadius="90dp" />
+        app:cardBackgroundColor="#ab47bc" />
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardSnake2_6"
         android:layout_width="50dp"
         android:layout_height="100dp"
-        app:cardBackgroundColor="#ba68c8"
-        app:layout_constraintCircle="@id/guidelineView2"
-        app:layout_constraintCircleAngle="0"
-        app:layout_constraintCircleRadius="90dp" />
-
-
-
+        app:cardBackgroundColor="#ba68c8" />
 
 <!--    START PINK CARDS-->
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardSnake1"
         android:layout_width="50dp"
         android:layout_height="100dp"
-        app:cardBackgroundColor="#f06292"
-        app:layout_constraintCircle="@id/guidelineView1"
-        app:layout_constraintCircleAngle="0"
-        app:layout_constraintCircleRadius="90dp" />
+        app:cardBackgroundColor="#f06292" />
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardSnake1_1"
         android:layout_width="50dp"
         android:layout_height="100dp"
-        app:cardBackgroundColor="#ec407a"
-        app:layout_constraintCircle="@id/guidelineView1"
-        app:layout_constraintCircleAngle="0"
-        app:layout_constraintCircleRadius="90dp" />
+        app:cardBackgroundColor="#ec407a"/>
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardSnake1_2"
         android:layout_width="50dp"
         android:layout_height="100dp"
-        app:cardBackgroundColor="#e91e63"
-        app:layout_constraintCircle="@id/guidelineView1"
-        app:layout_constraintCircleAngle="0"
-        app:layout_constraintCircleRadius="90dp" />
+        app:cardBackgroundColor="#e91e63"/>
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardSnake1_3"
         android:layout_width="50dp"
         android:layout_height="100dp"
-        app:cardBackgroundColor="#d81b60"
-        app:layout_constraintCircle="@id/guidelineView1"
-        app:layout_constraintCircleAngle="0"
-        app:layout_constraintCircleRadius="90dp" />
+        app:cardBackgroundColor="#d81b60" />
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardSnake1_4"
         android:layout_width="50dp"
         android:layout_height="100dp"
-        app:cardBackgroundColor="#c2185b"
-        app:layout_constraintCircle="@id/guidelineView1"
-        app:layout_constraintCircleAngle="0"
-        app:layout_constraintCircleRadius="90dp" />
+        app:cardBackgroundColor="#c2185b"/>
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardSnake1_5"
         android:layout_width="50dp"
         android:layout_height="100dp"
-        app:cardBackgroundColor="#ad1457"
-        app:layout_constraintCircle="@id/guidelineView1"
-        app:layout_constraintCircleAngle="0"
-        app:layout_constraintCircleRadius="90dp" />
+        app:cardBackgroundColor="#ad1457" />
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardSnake1_6"
         android:layout_width="50dp"
         android:layout_height="100dp"
-        app:cardBackgroundColor="#880e4f"
-        app:layout_constraintCircle="@id/guidelineView1"
-        app:layout_constraintCircleAngle="0"
-        app:layout_constraintCircleRadius="90dp" />
+        app:cardBackgroundColor="#880e4f" />
 <!--    END PINK CARDS-->
 
     <!-- RED CARDS -->
@@ -174,64 +129,69 @@
         android:id="@+id/cardSnake0"
         android:layout_width="50dp"
         android:layout_height="100dp"
-        app:cardBackgroundColor="#b71c1c"
-        app:layout_constraintCircle="@id/guidelineView0"
-        app:layout_constraintCircleAngle="0"
-        app:layout_constraintCircleRadius="90dp" />
+        app:cardBackgroundColor="#b71c1c" />
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardSnake0_1"
         android:layout_width="50dp"
         android:layout_height="100dp"
-        app:cardBackgroundColor="#c62828"
-        app:layout_constraintCircle="@id/guidelineView0"
-        app:layout_constraintCircleAngle="0"
-        app:layout_constraintCircleRadius="90dp" />
+        app:cardBackgroundColor="#c62828"/>
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardSnake0_2"
         android:layout_width="50dp"
         android:layout_height="100dp"
-        app:cardBackgroundColor="#d32f2f"
-        app:layout_constraintCircle="@id/guidelineView0"
-        app:layout_constraintCircleAngle="0"
-        app:layout_constraintCircleRadius="90dp" />
+        app:cardBackgroundColor="#d32f2f" />
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardSnake0_3"
         android:layout_width="50dp"
         android:layout_height="100dp"
-        app:cardBackgroundColor="#e53935"
-        app:layout_constraintCircle="@id/guidelineView0"
-        app:layout_constraintCircleAngle="0"
-        app:layout_constraintCircleRadius="90dp" />
+        app:cardBackgroundColor="#e53935"/>
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardSnake0_4"
         android:layout_width="50dp"
         android:layout_height="100dp"
-        app:cardBackgroundColor="#f44336"
-        app:layout_constraintCircle="@id/guidelineView0"
-        app:layout_constraintCircleAngle="0"
-        app:layout_constraintCircleRadius="90dp" />
+        app:cardBackgroundColor="#f44336"/>
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardSnake0_5"
         android:layout_width="50dp"
         android:layout_height="100dp"
-        app:cardBackgroundColor="#ef5350"
-        app:layout_constraintCircle="@id/guidelineView0"
-        app:layout_constraintCircleAngle="0"
-        app:layout_constraintCircleRadius="90dp" />
+        app:cardBackgroundColor="#ef5350" />
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardSnake0_6"
         android:layout_width="50dp"
         android:layout_height="100dp"
-        app:cardBackgroundColor="#e57373"
-        app:layout_constraintCircle="@id/guidelineView0"
-        app:layout_constraintCircleAngle="0"
-        app:layout_constraintCircleRadius="90dp" />
+        app:cardBackgroundColor="#e57373"/>
     <!-- END RED CARDS-->
+    <androidx.constraintlayout.helper.widget.CircularFlow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/circularFlow0"
+        app:circularflow_defaultAngle="0"
+        app:circularflow_defaultRadius="90"
+        app:circularflow_viewCenter="@id/guidelineView0"
+        app:constraint_referenced_ids="cardSnake0, cardSnake0_1, cardSnake0_2, cardSnake0_3, cardSnake0_4, cardSnake0_5, cardSnake0_6"/>
+
+    <androidx.constraintlayout.helper.widget.CircularFlow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/circularFlow1"
+        app:circularflow_defaultAngle="0"
+        app:circularflow_defaultRadius="90"
+        app:circularflow_viewCenter="@id/guidelineView1"
+        app:constraint_referenced_ids="cardSnake1, cardSnake1_1, cardSnake1_2, cardSnake1_3, cardSnake1_4, cardSnake1_5, cardSnake1_6"/>
+
+    <androidx.constraintlayout.helper.widget.CircularFlow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/circularFlow2"
+        app:circularflow_defaultAngle="0"
+        app:circularflow_defaultRadius="90"
+        app:circularflow_viewCenter="@id/guidelineView2"
+        app:constraint_referenced_ids="cardSnake2, cardSnake2_1, cardSnake2_2, cardSnake2_3, cardSnake2_4, cardSnake2_5, cardSnake2_6"/>
 
 </androidx.constraintlayout.motion.widget.MotionLayout>
