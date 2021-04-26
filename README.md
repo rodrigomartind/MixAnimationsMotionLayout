@@ -4,6 +4,9 @@ Les comparto un mix de varias animaciones con MotionLayout.
 
 Pueden consultarme sus dudas por Twitter -> https://twitter.com/RodrigoMartinD
 
+# Menu selector
+<img src="https://user-images.githubusercontent.com/56642332/116121696-430b0400-a697-11eb-8a86-17113d2d4c4d.gif"  width="300" />
+
 # MODO Payment
 <img src="https://user-images.githubusercontent.com/24611045/106630234-6ae84100-655a-11eb-9598-5063d4460ec4.gif"  width="300" />
 
