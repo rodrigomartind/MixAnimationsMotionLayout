@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    app:layoutDescription="@xml/activity_menu_selection_carousel_scene"
+    tools:context=".menuselection.MenuSelectionCarouselActivity">
+
+
+    <TextView
+        android:id="@+id/titleMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:fontFamily="@font/rubik_bold"
+        android:text="Sushi test"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:transitionName="demo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/priceMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik_medium"
+        android:textColor="@android:color/white"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/menu0"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:cardBackgroundColor="@color/colorAccent"
+        app:layout_constraintEnd_toStartOf="@id/menu1"
+        app:layout_constraintTop_toBottomOf="@id/menu1" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/menu1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:cardBackgroundColor="@color/colorAccent"
+        app:layout_constraintEnd_toStartOf="@id/menu2"
+        app:layout_constraintTop_toBottomOf="@id/menu2" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/menu2"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/menu3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:cardBackgroundColor="@color/design_default_color_error"
+        app:layout_constraintStart_toEndOf="@id/menu2"
+        app:layout_constraintTop_toBottomOf="@id/menu2" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/menu4"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:cardBackgroundColor="@color/design_default_color_error"
+        app:layout_constraintStart_toEndOf="@id/menu3"
+        app:layout_constraintTop_toBottomOf="@id/menu3" />
+
+
+    <TextView
+        android:id="@+id/sizePizzaS"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:alpha="0"
+        android:background="@drawable/shape_size_cup"
+        android:fontFamily="@font/rubik_regular"
+        android:gravity="center"
+        android:text="S"
+        android:textColor="@android:color/white"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toStartOf="@id/sizePizzaM"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/priceMenu" />
+
+    <TextView
+        android:id="@+id/sizePizzaM"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:alpha="0"
+        android:background="@drawable/shape_size_cup"
+        android:fontFamily="@font/rubik_regular"
+        android:gravity="center"
+        android:text="M"
+        android:textColor="@android:color/white"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toStartOf="@id/sizePizzaL"
+        app:layout_constraintStart_toEndOf="@id/sizePizzaS"
+        app:layout_constraintTop_toBottomOf="@id/priceMenu" />
+
+    <TextView
+        android:id="@+id/sizePizzaL"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:alpha="0"
+        android:background="@drawable/shape_size_cup"
+        android:fontFamily="@font/rubik_regular"
+        android:gravity="center"
+        android:text="L"
+        android:textColor="@android:color/white"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/sizePizzaM"
+        app:layout_constraintTop_toBottomOf="@id/priceMenu" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/ingredient_1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:alpha="0"
+        app:cardBackgroundColor="@color/design_default_color_primary"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/ingredient_2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:alpha="0"
+        app:cardBackgroundColor="@color/design_default_color_primary"
+        app:cardCornerRadius="25dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.95" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/ingredient_3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:alpha="0"
+        app:cardBackgroundColor="@color/design_default_color_primary"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/ingredient_4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:alpha="0"
+        app:cardBackgroundColor="@color/design_default_color_primary"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95" />
+
+    <androidx.constraintlayout.helper.widget.Carousel
+        android:id="@+id/carouselMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:carousel_backwardTransition="@+id/leftTransition"
+        app:carousel_firstView="@id/menu2"
+        app:carousel_forwardTransition="@+id/rightTransition"
+        app:carousel_infinite="true"
+        app:carousel_nextState="@+id/left"
+        app:carousel_previousState="@+id/right"
+        app:constraint_referenced_ids="menu0, menu1, menu2, menu3, menu4" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

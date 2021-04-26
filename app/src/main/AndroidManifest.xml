@@ -27,7 +27,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".modopay.ModoPaymentActivity"></activity>
+        <activity android:name=".menuselection.MenuSelectionDetailActivity"></activity>
+        <activity android:name=".menuselection.MenuSelectionCarouselActivity" />
+        <activity android:name=".circularsongs.CircularSongsActivity" />
+        <activity android:name=".circularsteps.CircularStepsActivity" />
+        <activity android:name=".circularsteps.Demo" />
+        <activity android:name=".flight.FlightSelectorActivity" />
+        <activity android:name=".modopay.ModoPaymentActivity" />
         <activity android:name=".verticalsnake.VerticalSnakeActivity" />
         <activity android:name=".pivotrotation.FoodCircleTabsActivity" />
         <activity android:name=".carouselhelper.CarouselHelperActivity" />

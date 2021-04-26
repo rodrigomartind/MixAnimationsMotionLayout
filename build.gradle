@@ -7,7 +7,7 @@ buildscript {
 
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:4.2.0-beta01'
+        classpath 'com.android.tools.build:gradle:4.2.0-beta06'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 
         // NOTE: Do not place your application dependencies here; they belong
@@ -27,7 +27,7 @@ ext {
     appCompat = '1.2.0'
     constraintLayout = '2.1.0-beta01'
     coreKtx = '1.5.0-alpha02'
-    materialComponents = '1.3.0-alpha02'
+    materialComponents = '1.4.0-alpha02'
 }
 
 task clean(type: Delete) {

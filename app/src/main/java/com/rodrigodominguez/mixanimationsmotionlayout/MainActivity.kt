@@ -5,10 +5,13 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.rodrigodominguez.mixanimationsmotionlayout.carouselhelper.CarouselHelperActivity
 import com.rodrigodominguez.mixanimationsmotionlayout.circularcards.CircularCardsHomeActivity
+import com.rodrigodominguez.mixanimationsmotionlayout.circularsongs.CircularSongsActivity
+import com.rodrigodominguez.mixanimationsmotionlayout.circularsteps.CircularStepsActivity
 import com.rodrigodominguez.mixanimationsmotionlayout.democonstraintset.DemoConstraintSetActivity
 import com.rodrigodominguez.mixanimationsmotionlayout.examplekeyposition.PositionKeyExampleActivity
 import com.rodrigodominguez.mixanimationsmotionlayout.flow.FlowDemoActivity
 import com.rodrigodominguez.mixanimationsmotionlayout.horizontalcarousel.HorizontalCarouselActivity
+import com.rodrigodominguez.mixanimationsmotionlayout.menuselection.MenuSelectionCarouselActivity
 import com.rodrigodominguez.mixanimationsmotionlayout.modopay.ModoPaymentActivity
 import com.rodrigodominguez.mixanimationsmotionlayout.motionwithar.MotionAndAugmentedRealityActivity
 import com.rodrigodominguez.mixanimationsmotionlayout.pillcards.PillCardsActivity
@@ -29,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         storiesHome.setOnClickListener {
             startActivity(
-                    Intent(this, InstagramStoryHomeActivity::class.java)
+                    Intent(this, CircularStepsActivity::class.java)
             )
         }
         circularCards.setOnClickListener {
@@ -123,6 +126,12 @@ class MainActivity : AppCompatActivity() {
         modoPaymentActivity.setOnClickListener {
             startActivity(
                     Intent(this, ModoPaymentActivity::class.java)
+            )
+        }
+
+        menuSelection.setOnClickListener {
+            startActivity(
+                Intent(this, MenuSelectionCarouselActivity::class.java)
             )
         }
     }

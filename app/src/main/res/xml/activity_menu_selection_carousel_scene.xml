@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        android:id="@+id/rightTransition"
+        motion:constraintSetEnd="@+id/right"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000">
+        <OnSwipe
+            motion:dragDirection="dragRight"
+            motion:onTouchUp="autoComplete"
+            motion:touchAnchorSide="left" />
+    </Transition>
+
+    <Transition
+        android:id="@+id/leftTransition"
+        motion:constraintSetEnd="@+id/left"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000">
+        <OnSwipe
+            motion:dragDirection="dragLeft"
+            motion:onTouchUp="autoComplete"
+            motion:touchAnchorSide="right" />
+    </Transition>
+
+    <Transition
+        motion:constraintSetEnd="@+id/detail"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000">
+        <OnClick
+            motion:clickAction="toggle"
+            motion:targetId="@id/menu2" />
+    </Transition>
+
+    <Transition
+        motion:constraintSetEnd="@+id/ingredient1"
+        motion:constraintSetStart="@id/detail"
+        motion:duration="600">
+        <OnSwipe
+            motion:dragDirection="dragUp"
+            motion:onTouchUp="autoCompleteToStart"
+            motion:touchRegionId="@id/ingredient_1" />
+    </Transition>
+
+    <Transition
+        motion:autoTransition="animateToStart"
+        motion:constraintSetEnd="@+id/ingredient1"
+        motion:constraintSetStart="@+id/detail"
+        motion:duration="200" />
+
+
+    <Transition
+        motion:constraintSetEnd="@+id/ingredient2"
+        motion:constraintSetStart="@id/detail"
+        motion:duration="600">
+        <OnSwipe
+            motion:dragDirection="dragUp"
+            motion:onTouchUp="autoCompleteToStart"
+            motion:touchRegionId="@id/ingredient_2" />
+    </Transition>
+
+    <Transition
+        motion:autoTransition="animateToStart"
+        motion:constraintSetEnd="@+id/ingredient2"
+        motion:constraintSetStart="@+id/detail"
+        motion:duration="200" />
+
+
+    <Transition
+        motion:constraintSetEnd="@+id/ingredient3"
+        motion:constraintSetStart="@id/detail"
+        motion:duration="600">
+        <OnSwipe
+            motion:dragDirection="dragUp"
+            motion:onTouchUp="autoCompleteToStart"
+            motion:touchRegionId="@id/ingredient_3" />
+    </Transition>
+
+    <Transition
+        motion:autoTransition="animateToStart"
+        motion:constraintSetEnd="@+id/ingredient3"
+        motion:constraintSetStart="@+id/detail"
+        motion:duration="200" />
+
+
+    <Transition
+        motion:constraintSetEnd="@+id/ingredient4"
+        motion:constraintSetStart="@id/detail"
+        motion:duration="600">
+        <OnSwipe
+            motion:dragDirection="dragUp"
+            motion:onTouchUp="autoCompleteToStart"
+            motion:touchRegionId="@id/ingredient_4" />
+    </Transition>
+
+    <Transition
+        motion:autoTransition="animateToStart"
+        motion:constraintSetEnd="@+id/ingredient4"
+        motion:constraintSetStart="@+id/detail"
+        motion:duration="100" />
+
+
+    <ConstraintSet android:id="@+id/start">
+
+        <Constraint android:id="@+id/menu0">
+            <CustomAttribute
+                motion:attributeName="radius"
+                motion:customDimension="75dp" />
+        </Constraint>
+
+        <Constraint android:id="@id/ingredient_4">
+            <CustomAttribute
+                motion:attributeName="radius"
+                motion:customDimension="25dp" />
+        </Constraint>
+
+        <Constraint
+            android:id="@+id/menu1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            motion:layout_constraintEnd_toStartOf="@id/menu2"
+            motion:layout_constraintTop_toBottomOf="@id/menu2">
+            <CustomAttribute
+                motion:attributeName="radius"
+                motion:customDimension="75dp" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/menu2"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent">
+            <CustomAttribute
+                motion:attributeName="radius"
+                motion:customDimension="125dp" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/menu3"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            motion:layout_constraintStart_toEndOf="@id/menu2"
+            motion:layout_constraintTop_toBottomOf="@id/menu2">
+            <CustomAttribute
+                motion:attributeName="radius"
+                motion:customDimension="75dp" />
+        </Constraint>
+        <Constraint android:id="@+id/menu4">
+            <CustomAttribute
+                motion:attributeName="radius"
+                motion:customDimension="75dp" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/titleMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintVertical_bias="0.75" />
+        <Constraint
+            android:id="@+id/priceMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintVertical_bias="0.80" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/right">
+        <Constraint
+            android:id="@+id/priceMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintVertical_bias="0.80" />
+        <Constraint android:id="@+id/menu0">
+            <CustomAttribute
+                motion:attributeName="radius"
+                motion:customDimension="75dp" />
+        </Constraint>
+        <Constraint android:id="@+id/menu1">
+            <Layout
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                motion:layout_constraintBottom_toBottomOf="parent"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintStart_toStartOf="parent"
+                motion:layout_constraintTop_toTopOf="parent" />
+            <CustomAttribute
+                motion:attributeName="radius"
+                motion:customDimension="125dp" />
+        </Constraint>
+
+        <Constraint android:id="@+id/menu2">
+            <Layout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                motion:layout_constraintStart_toEndOf="@id/menu1"
+                motion:layout_constraintTop_toBottomOf="@id/menu1" />
+            <CustomAttribute
+                motion:attributeName="radius"
+                motion:customDimension="75dp" />
+
+        </Constraint>
+        <Constraint android:id="@+id/menu4">
+            <CustomAttribute
+                motion:attributeName="radius"
+                motion:customDimension="75dp" />
+        </Constraint>
+
+        <Constraint android:id="@+id/titleMenu">
+            <Layout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                motion:layout_constraintBottom_toBottomOf="parent"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintStart_toStartOf="parent"
+                motion:layout_constraintTop_toTopOf="parent"
+                motion:layout_constraintVertical_bias="0.75" />
+        </Constraint>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/left">
+        <Constraint
+            android:id="@+id/priceMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintVertical_bias="0.80" />
+        <Constraint android:id="@+id/menu0">
+            <CustomAttribute
+                motion:attributeName="radius"
+                motion:customDimension="75dp" />
+        </Constraint>
+        <Constraint android:id="@+id/menu3">
+            <Layout
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                motion:layout_constraintBottom_toBottomOf="parent"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintStart_toStartOf="parent"
+                motion:layout_constraintTop_toTopOf="parent" />
+            <CustomAttribute
+                motion:attributeName="radius"
+                motion:customDimension="125dp" />
+
+        </Constraint>
+
+        <Constraint android:id="@+id/menu2">
+            <Layout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                motion:layout_constraintEnd_toStartOf="@id/menu3"
+                motion:layout_constraintTop_toBottomOf="@id/menu3" />
+
+        </Constraint>
+        <Constraint android:id="@+id/menu4">
+            <CustomAttribute
+                motion:attributeName="radius"
+                motion:customDimension="75dp" />
+        </Constraint>
+        <Constraint android:id="@+id/titleMenu">
+            <Layout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                motion:layout_constraintBottom_toBottomOf="parent"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintStart_toStartOf="parent"
+                motion:layout_constraintTop_toTopOf="parent"
+                motion:layout_constraintVertical_bias="0.75" />
+        </Constraint>
+    </ConstraintSet>
+
+
+    <ConstraintSet
+        android:id="@+id/detail"
+        motion:deriveConstraintsFrom="@id/start">
+
+        <Constraint
+            android:id="@+id/menu2"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent">
+            <CustomAttribute
+                motion:attributeName="radius"
+                motion:customDimension="150dp" />
+        </Constraint>
+
+
+        <Constraint android:id="@+id/titleMenu">
+            <Layout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                motion:layout_constraintBottom_toBottomOf="parent"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintStart_toStartOf="parent"
+                motion:layout_constraintTop_toTopOf="parent"
+                motion:layout_constraintVertical_bias="0.10" />
+        </Constraint>
+
+        <Constraint
+            android:id="@+id/priceMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintVertical_bias="0.78" />
+
+        <Constraint android:id="@id/menu1">
+            <PropertySet android:alpha="0" />
+        </Constraint>
+        <Constraint android:id="@id/menu3">
+            <PropertySet android:alpha="0" />
+        </Constraint>
+        <Constraint android:id="@id/sizePizzaS">
+            <PropertySet android:alpha="1" />
+        </Constraint>
+        <Constraint android:id="@id/sizePizzaL">
+            <PropertySet android:alpha="1" />
+        </Constraint>
+        <Constraint android:id="@id/sizePizzaM">
+            <PropertySet android:alpha="1" />
+        </Constraint>
+        <Constraint android:id="@id/ingredient_1">
+            <PropertySet android:alpha="1" />
+            <CustomAttribute
+                motion:attributeName="radius"
+                motion:customDimension="25dp" />
+        </Constraint>
+        <Constraint android:id="@id/ingredient_2">
+            <PropertySet android:alpha="1" />
+            <CustomAttribute
+                motion:attributeName="radius"
+                motion:customDimension="25dp" />
+        </Constraint>
+        <Constraint android:id="@id/ingredient_3">
+            <PropertySet android:alpha="1" />
+            <CustomAttribute
+                motion:attributeName="radius"
+                motion:customDimension="25dp" />
+        </Constraint>
+        <Constraint android:id="@id/ingredient_4">
+            <PropertySet android:alpha="1" />
+            <CustomAttribute
+                motion:attributeName="radius"
+                motion:customDimension="25dp" />
+        </Constraint>
+    </ConstraintSet>
+
+    <ConstraintSet
+        android:id="@+id/ingredient1"
+        motion:deriveConstraintsFrom="@id/detail">
+        <Constraint android:id="@id/ingredient_1">
+            <Layout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="100dp"
+                motion:layout_constraintBottom_toBottomOf="@id/menu2"
+                motion:layout_constraintEnd_toEndOf="@id/menu2"
+                motion:layout_constraintStart_toStartOf="@id/menu2"
+                motion:layout_constraintTop_toTopOf="@id/menu2" />
+            <PropertySet android:alpha="1" />
+        </Constraint>
+    </ConstraintSet>
+
+
+    <ConstraintSet
+        android:id="@+id/ingredient2"
+        motion:deriveConstraintsFrom="@id/detail">
+        <Constraint android:id="@id/ingredient_2">
+            <Layout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="100dp"
+                motion:layout_constraintBottom_toBottomOf="@id/menu2"
+                motion:layout_constraintEnd_toEndOf="@id/menu2"
+                motion:layout_constraintStart_toStartOf="@id/menu2"
+                motion:layout_constraintTop_toTopOf="@id/menu2" />
+            <PropertySet android:alpha="1" />
+        </Constraint>
+    </ConstraintSet>
+
+    <ConstraintSet
+        android:id="@+id/ingredient3"
+        motion:deriveConstraintsFrom="@id/detail">
+        <Constraint android:id="@id/ingredient_3">
+            <Layout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="100dp"
+                motion:layout_constraintBottom_toBottomOf="@id/menu2"
+                motion:layout_constraintEnd_toEndOf="@id/menu2"
+                motion:layout_constraintStart_toStartOf="@id/menu2"
+                motion:layout_constraintTop_toTopOf="@id/menu2" />
+            <PropertySet android:alpha="1" />
+        </Constraint>
+    </ConstraintSet>
+
+    <ConstraintSet
+        android:id="@+id/ingredient4"
+        motion:deriveConstraintsFrom="@id/detail">
+        <Constraint android:id="@id/ingredient_4">
+            <Layout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="100dp"
+                motion:layout_constraintBottom_toBottomOf="@id/menu2"
+                motion:layout_constraintEnd_toEndOf="@id/menu2"
+                motion:layout_constraintStart_toStartOf="@id/menu2"
+                motion:layout_constraintTop_toTopOf="@id/menu2" />
+            <PropertySet android:alpha="1" />
+        </Constraint>
+    </ConstraintSet>
+
+</MotionScene>
