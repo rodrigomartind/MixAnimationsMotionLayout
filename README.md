@@ -1,8 +1,6 @@
 # MixAnimationsMotionLayout 
 
-Les comparto un mix de varias animaciones con MotionLayout.
-
-Pueden consultarme sus dudas por Twitter -> https://twitter.com/RodrigoMartinD
+### This repository contains a set of MotionLayout examples.
 
 # Menu selector
 <img src="https://user-images.githubusercontent.com/56642332/116121696-430b0400-a697-11eb-8a86-17113d2d4c4d.gif"  width="300" />
