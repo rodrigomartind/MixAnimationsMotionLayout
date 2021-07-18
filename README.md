@@ -73,5 +73,5 @@ Pueden consultarme sus dudas por Twitter -> https://twitter.com/RodrigoMartinD
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Rodrigo_Dominguez-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=101010)](https://www.linkedin.com/in/rodrigo-martin-dominguez-463b5a33/)
 </br>
 
-## 🔖 License
+## License
 This project is licensed under the Apache 2.0 License - see the [LICENSE](LICENSE) file for details
