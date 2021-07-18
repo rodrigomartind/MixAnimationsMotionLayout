@@ -65,4 +65,13 @@ Pueden consultarme sus dudas por Twitter -> https://twitter.com/RodrigoMartinD
 <img src="https://user-images.githubusercontent.com/56642332/103547800-a3c1c700-4e83-11eb-96d5-0907ea871ec8.gif"  width="300" />
 
 
-# by Rodrigo Dominguez
+## Find me at:
+[![Medium](https://img.shields.io/badge/Medium-@rodrigomartind-9146FF?style=for-the-badge&logo=medium&logoColor=white&labelColor=101010)](https://rodrigomartind.medium.com/)
+</br>
+[![Twitter](https://img.shields.io/badge/Twitter-@rodrigomartind-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white&labelColor=101010)](https://twitter.com/RodrigoMartinD)
+</br>
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Rodrigo_Dominguez-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=101010)](https://www.linkedin.com/in/rodrigo-martin-dominguez-463b5a33/)
+</br>
+
+## 🔖 License
+This project is licensed under the Apache 2.0 License - see the [LICENSE](LICENSE) file for details
