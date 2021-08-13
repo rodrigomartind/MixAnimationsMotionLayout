@@ -5,7 +5,7 @@
 ## MotionLayout samples overview
 -----------------------------
 
-|  Title  |  GIF  | Composable |
+|  Title  |  GIF  | XML |
 | :----: | :----: | :----: |
 |  Menu selector | <img src="https://user-images.githubusercontent.com/56642332/116121696-430b0400-a697-11eb-8a86-17113d2d4c4d.gif" height="360" width="180" > | [XML](https://github.com/rodrigomartind/MixAnimationsMotionLayout/blob/master/app/src/main/res/layout/activity_menu_selection_carousel.xml) <br> [MotionScene](https://github.com/rodrigomartind/MixAnimationsMotionLayout/blob/master/app/src/main/res/xml/activity_menu_selection_carousel_scene.xml)|
 |  MODO Payment | <img src="https://user-images.githubusercontent.com/24611045/106630234-6ae84100-655a-11eb-9598-5063d4460ec4.gif" height="360" width="180" > | [XML](https://github.com/rodrigomartind/MixAnimationsMotionLayout/blob/master/app/src/main/res/layout/activity_modo_payment.xml)<br>[MotionScene](https://github.com/rodrigomartind/MixAnimationsMotionLayout/blob/master/app/src/main/res/xml/activity_modo_payment_scene.xml)|
